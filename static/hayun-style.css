@@ -1,58 +1,58 @@
 .main_page_top {
-    background-color: #FDDECC;
+	background-color: #fddecc;
 
-    height: 500px;
+	height: 500px;
 
-    background-size: cover;
-    background-position: center;
+	background-size: cover;
+	background-position: center;
 }
-
+nav {
+	display: flex;
+	justify-content: space-between;
+}
 .logo {
-    margin: 0px 20px 10px 30px;
-    float: left;
-    padding-top: 20px;
+	margin: 0px 20px 10px 30px;
+	float: left;
+	padding-top: 20px;
 }
 
 ul {
-    width: 500px;
-    height: 20px;
-    background-color: #FDDECC;
-    list-style: none;
-    padding-top: 30px;
-    padding-left: 125px;
+	/* width: 500px; */
+	height: fit-content;
+	background-color: #fddecc;
+	list-style: none;
+	padding-top: 30px;
 }
 
 ul li {
-    float: left;
-    margin-right: 25px;
+	float: left;
+	margin-right: 25px;
 }
 
 ul li a {
-    font-size: 25px;
-    color: black;
-    font-weight: normal;
-    text-decoration: none;
+	font-size: 25px;
+	color: black;
+	font-weight: normal;
+	text-decoration: none;
 }
 
 .form-control {
-    background-color: #FDDECC;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: 3px solid black;
+	background-color: #fddecc;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 3px solid black;
 }
 
 .btn-outline-secondary {
-    background-color: #FDDECC;
-    border: none;
-    
+	background-color: #fddecc;
+	border: none;
 }
 
 .search-box {
-    width: 250px;
-    height: 45px;
-    float: right;
-    padding-right: 50px;
-    padding-top: 0px;
-    
+	width: 250px;
+	height: 45px;
+	/* float: right; */
+	/* padding-right: 10px; */
+	padding-top: 30px;
 }
