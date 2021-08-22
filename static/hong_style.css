@@ -1,0 +1,51 @@
+:root {
+	/* color */
+	--peach-color: hsl(23, 93%, 89%);
+
+	/* font */
+	--font-large: 4em;
+	--font-medium: 1.5em;
+	--font-small: 0.8em;
+	--font-micro: 0.73m;
+
+	/* padding */
+    --padding-side:100px;
+	--padding-large: 30px;
+	--padding-medium: 20px;
+	--padding-small: 10px;
+
+	/* image */
+	--img-width: 300px;
+	--img-height: 400px;
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+.main {
+	background-color: var(--peach-color);
+}
+.main .main-exhibition {
+	display: flex;
+	justify-content: space-between;
+	padding: var(--padding-large);
+}
+.main .main-exhibition .exhibition-desc {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: var(--padding-side);
+}
+.main .main-exhibition .exhibition-desc .exhibition-name {
+	font-size: var(--font-large);
+	padding-bottom: var(--padding-medium);
+}
+.main .main-exhibition .exhibition-desc .exhibition-place,
+.main .main-exhibition .exhibition-desc .exhibition-date {
+	font-size: var(--font-medium);
+}
+.main .main-exhibition .exhibition-img {
+	padding-right: var(--padding-side);
+	width: var(--img-width)
+	height: var(--img-height);
+}
