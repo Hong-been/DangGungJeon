@@ -34,8 +34,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+<<<<<<< HEAD
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+=======
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
+>>>>>>> 448f24d3ef9f1ca62d5889e7bb0dd29bb1d0edd8
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
@@ -82,9 +86,13 @@
       <workItem from="1629607357329" duration="1791000" />
       <workItem from="1629611449609" duration="4000" />
       <workItem from="1629611522926" duration="152000" />
+<<<<<<< HEAD
+      <workItem from="1629615248725" duration="40000" />
+=======
       <workItem from="1629611693237" duration="75000" />
       <workItem from="1629611794761" duration="6970000" />
       <workItem from="1629619001823" duration="38000" />
+>>>>>>> 448f24d3ef9f1ca62d5889e7bb0dd29bb1d0edd8
     </task>
     <servers />
   </component>
