@@ -1,32 +1,107 @@
-  .card-columns{
+.like {
+    font-size: 30px;
+    Width: 245px;
+    Height: 35px;
+    Top: 652px;
+    Left: 47px;
+    margin: 50px auto 20px 50px;
+}
+
+.card-columns {
     height: 500px;
 }
 
-.card-img{
-        width: 300px;
-        height: 400px;
-        top: 705px;
-        left: 400px;
-        position: center;
-        margin: auto auto auto 50px;
-    }
+.slidebox {
+    width: 300vw;
+}
 
-.card-text{
-        margin: auto auto auto 150px;
-    }
+.slideitem {
+    width: 300px;
+    height: 450px;
+    float: left;
+    margin: auto 20px auto 40px;
+}
 
-.owl-prev{
-    position: absolute;
-    left: 10px;
-    top: 250px;
+.card-img {
+    width: 300px;
+    height: 400px;
+    top: 705px;
+    left: 400px;
+    position: center;
+    margin: auto auto auto 50px;
+}
+
+.card-name {
+    color: black;
+    margin: auto auto auto 150px;
+}
+
+.ico_arrow-R {
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    border: transparent;
+    outline: transparent;
+    position: relative;
+    text-indent: -9999px;
+    margin: 150px auto auto 50px;
+
+}
+
+.ico_arrow-R:before {
+    content: '';
     width: 30px;
-    padding: 5px;
-    }
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-left: 2px solid #000;
+    border-top: 2px solid #000;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
 
-.owl-next{
-        position: absolute;
-        right: 10px;
-        top: 250px ;
-        width: 30px;
-        padding: 5px;
-    }
+.ico_arrow-R:after {
+    content: '';
+    width: 42px;
+    height: 2px;
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #000
+}
+
+.ico_arrow-L {
+    width: 80px;
+    height: 80px;
+    background-color: transparent;
+    border: transparent;
+    outline: transparent;
+    position: absolute;
+    margin: 150px auto auto auto;
+    text-indent: -9999px;
+
+}
+
+.ico_arrow-L:before {
+    content: '';
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-right: 2px solid #000;
+    border-bottom: 2px solid #000;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+.ico_arrow-L:after {
+    content: '';
+    width: 42px;
+    height: 2px;
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #000
+}
