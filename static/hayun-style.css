@@ -47,6 +47,7 @@ ul li a {
 .btn-outline-secondary {
 	background-color: #fddecc;
 	border: none;
+	
 }
 
 .search-box {
@@ -55,4 +56,5 @@ ul li a {
 	/* float: right; */
 	/* padding-right: 10px; */
 	padding-top: 30px;
+	padding-right: 15px;
 }
