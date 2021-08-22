@@ -6,13 +6,3 @@
 	padding: 0;
 	margin: 0;
 }
-.header {
-	display: flex;
-	justify-content: space-between;
-
-	background-color: var(--peach-color);
-}
-.header .nav {
-	display: flex;
-	justify-content: space-around;
-}
