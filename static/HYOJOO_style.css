@@ -1,3 +1,7 @@
+.section{
+    height: 700px;
+}
+
 .like {
     font-size: 30px;
     Width: 245px;
@@ -8,11 +12,14 @@
 }
 
 .card-columns {
-    height: 500px;
+    height: 450px;
+    width: 65px;
+    margin: auto 30px auto 65px;
 }
 
 .slidebox {
     width: 300vw;
+    margin: auto;
 }
 
 .slideitem {
@@ -22,18 +29,26 @@
     margin: auto 20px auto 40px;
 }
 
+.card-body{
+    width: 300px;
+    height: 600px;
+}
+
 .card-img {
     width: 300px;
     height: 400px;
     top: 705px;
     left: 400px;
-    position: center;
-    margin: auto auto auto 50px;
+    margin: auto;
 }
 
 .card-name {
     color: black;
-    margin: auto auto auto 150px;
+    margin: 450px auto auto auto;
+    display: inline-block;
+    font-size: 24px;
+    text-align: center;
+    height: 400px;
 }
 
 .ico_arrow-R {
@@ -42,9 +57,11 @@
     background-color: transparent;
     border: transparent;
     outline: transparent;
-    position: relative;
+    position: absolute;
+    right: 0;
+    margin: 150px auto auto auto;
     text-indent: -9999px;
-    margin: 150px auto auto 50px;
+    float: right;
 
 }
 
@@ -65,7 +82,7 @@
     width: 42px;
     height: 2px;
     position: absolute;
-    right: 18px;
+    right: 20px;
     top: 50%;
     transform: translateY(-50%);
     background: #000
