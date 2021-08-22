@@ -1,0 +1,105 @@
+* {
+    font-family: 'Noto Sans KR', sans-serif;
+}
+header {
+    background-color : #FDDECC;
+    height: 80px;
+}
+/*사이트 정보 파트*/
+.our_work {
+    text-align: center;
+    margin: 120px auto 120px auto;
+    width: 1000px;
+}
+
+.title_work {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/*팀원설명 파트*/
+.title_meet {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+/*박스 들어갈 부분*/
+.pack {
+    display: flex;
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto 30px auto;
+}
+
+.pack > li {
+    flex: 1;
+    height: 500px;
+}
+
+.pack > li:not(:last-child) {
+    margin-right: 30px;
+}
+
+li {
+    list-style: none;
+    padding-left: 0px;
+}
+
+/*개별 박스*/
+.box-body {
+    text-align: center;
+    margin: auto;
+}
+
+.box-img-top {
+    width: 240px;
+    height: 240px;
+    margin: 0 auto 0 auto;
+    display: block;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 5px auto 0 auto;
+}
+
+.box-text {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.box-link {
+    padding-left: 5px;
+    width: 20px;
+    height: 20px;
+}
+
+.url {
+    width: 90px;
+    height: 40px;
+    background: #2F7AF4;
+    color: #fff;
+    font-size: 15px;
+    margin: 10px auto 0 auto;
+    border: 0;
+    border-radius: 3px;
+    outline: 0;
+}
+
+/*thnks to 부분*/
+.title_tutor {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+.name_tutor {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
