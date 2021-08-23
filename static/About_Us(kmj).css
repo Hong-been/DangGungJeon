@@ -5,37 +5,37 @@ header {
 /*사이트 정보 파트*/
 .our_work {
     text-align: center;
-    margin: 120px auto 120px auto;
+    margin: 120px auto 160px auto;
     width: 900px;
 }
 
-.title_work {
+.our_work .title {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 /*팀원설명 파트*/
-.title_meet {
+.team .title {
     text-align: center;
     font-size: 36px;
     font-weight: bold;
 }
 
 /*박스 들어갈 부분*/
-.pack {
+.box {
     display: flex;
     width: 840px;
     height: 360px;
     margin: auto;
 }
 
-.pack > li {
+.box > li {
     flex: 1;
     height: 360px;
 }
 
-.pack > li:not(:last-child) {
+.box > li:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -45,34 +45,34 @@ li {
 }
 
 /*개별 박스*/
-.box-body {
+.team .box .box-body {
     text-align: center;
     margin: auto;
 }
 
-.box-img-top {
+.team .box .box-body img {
     width: 160px;
     height: 140px;
     margin: 10px auto 0 auto;
     display: block;
 }
 
-.name {
+.team .box .box-body .name {
     font-size: 22px;
     font-weight: bold;
     text-align: center;
     margin: 5px auto 0 auto;
 }
 
-.box-text {
+.team .box .box-body .text {
     width : 240px;
     font-size: 12px;
     margin: 5px auto 10px auto;
 }
 
-.url {
+.team .box .box-body a .url {
     width: 90px;
-    height: 40px;
+    height: 36px;
     background: #2F7AF4;
     color: #fff;
     font-size: 15px;
@@ -83,44 +83,52 @@ li {
 }
 
 /*thnks to 부분*/
-.title_tutor {
+.thanks .title {
     text-align: center;
     font-size: 36px;
     font-weight: bold;
-    margin-bottom: 10px;
-}
-.name_tutor {
-    font-size: 24px;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
+    margin-top: 100px;
+    margin-bottom: 30px;
 }
 
-.position {
+.thanks .box-2 .body .position {
     font-style:italic;
     font-size:14px;
     padding-right:10px;
     color: #D8384D;
 }
 
-.pack2 {
+.thanks .box-2 .body .name {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.thanks .box-2 {
     display: flex;
     width: 800px;
     height: 200px;
     margin-left: 180px;
 }
 
-.pack2 > li {
+.thanks .box-2 > li {
     flex: 1;
     height: 200px;
-    /*background-color: green;*/
 }
 
-.pack2 > li:not(:last-child) {
+.thanks .box-2 > li:not(:last-child) {
     margin-right: 10px;
 }
 
-.box-img-top-2 {
+.thanks .box-2 .body .logo {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+}
+
+.thanks .box-2 .body .box-img-top-2 {
     width: 100px;
     height: 120px;
     margin: 10px auto 0 auto;
