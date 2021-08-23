@@ -1,7 +1,7 @@
 .main_page_top {
 	background-color: #fddecc;
 
-	height: 500px;
+	/* height: 500px; */
 
 	background-size: cover;
 	background-position: center;
@@ -66,12 +66,11 @@ ul ul li a {
 
 #menu-list ul {
 	display: none;
-	position:absolute;
+	position: absolute;
 	width: 480px;
-	background-color:#fddecc;
+	background-color: #fddecc;
 }
 
 #menu-list li:hover ul {
 	display: block;
 }
-

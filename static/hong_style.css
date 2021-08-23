@@ -58,7 +58,7 @@ a {
 	font-size: var(--font-medium);
 }
 .main .main-exhibition .exhibition-img {
-	padding-right: var(--padding-side);
+	margin-right: var(--padding-side);
 	width: var(--img-width);
 	height: var(--img-height);
 }
