@@ -1,6 +1,3 @@
-* {
-    font-family: 'Noto Sans KR', sans-serif;
-}
 header {
     background-color : #FDDECC;
     height: 80px;
@@ -9,7 +6,7 @@ header {
 .our_work {
     text-align: center;
     margin: 120px auto 120px auto;
-    width: 1000px;
+    width: 900px;
 }
 
 .title_work {
@@ -28,14 +25,14 @@ header {
 /*박스 들어갈 부분*/
 .pack {
     display: flex;
-    width: 1000px;
-    height: 500px;
-    margin: 0 auto 30px auto;
+    width: 840px;
+    height: 360px;
+    margin: auto;
 }
 
 .pack > li {
     flex: 1;
-    height: 500px;
+    height: 360px;
 }
 
 .pack > li:not(:last-child) {
@@ -54,28 +51,23 @@ li {
 }
 
 .box-img-top {
-    width: 240px;
-    height: 240px;
-    margin: 0 auto 0 auto;
+    width: 160px;
+    height: 140px;
+    margin: 10px auto 0 auto;
     display: block;
 }
 
 .name {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     text-align: center;
     margin: 5px auto 0 auto;
 }
 
 .box-text {
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-
-.box-link {
-    padding-left: 5px;
-    width: 20px;
-    height: 20px;
+    width : 240px;
+    font-size: 12px;
+    margin: 5px auto 10px auto;
 }
 
 .url {
@@ -95,11 +87,46 @@ li {
     text-align: center;
     font-size: 36px;
     font-weight: bold;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 }
 .name_tutor {
     font-size: 24px;
     font-weight: bold;
     text-align: center;
     margin-top: 20px;
+}
+
+.position {
+    font-style:italic;
+    font-size:14px;
+    padding-right:10px;
+    color: #D8384D;
+}
+
+.pack2 {
+    display: flex;
+    width: 800px;
+    height: 200px;
+    margin-left: 180px;
+}
+
+.pack2 > li {
+    flex: 1;
+    height: 200px;
+    /*background-color: green;*/
+}
+
+.pack2 > li:not(:last-child) {
+    margin-right: 10px;
+}
+
+.box-img-top-2 {
+    width: 100px;
+    height: 120px;
+    margin: 10px auto 0 auto;
+    display: block;
+}
+
+footer {
+    height: 120px;
 }
