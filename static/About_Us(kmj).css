@@ -1,3 +1,4 @@
+/*header*/
 header {
     background-color : #FDDECC;
     height: 80px;
@@ -22,20 +23,20 @@ header {
     font-weight: bold;
 }
 
-/*박스 들어갈 부분*/
-.box {
+/*팀원 박스 들어갈 부분*/
+.team .box {
     display: flex;
     width: 840px;
     height: 360px;
     margin: auto;
 }
 
-.box > li {
+.team .box > li {
     flex: 1;
     height: 360px;
 }
 
-.box > li:not(:last-child) {
+.team .box > li:not(:last-child) {
     margin-right: 30px;
 }
 
@@ -44,13 +45,13 @@ li {
     padding-left: 0px;
 }
 
-/*개별 박스*/
+/* 팀원 개별 박스*/
 .team .box .box-body {
     text-align: center;
     margin: auto;
 }
 
-.team .box .box-body img {
+.team .box .box-body > img {
     width: 160px;
     height: 140px;
     margin: 10px auto 0 auto;
@@ -58,7 +59,7 @@ li {
 }
 
 .team .box .box-body .name {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
     margin: 5px auto 0 auto;
@@ -70,15 +71,15 @@ li {
     margin: 5px auto 10px auto;
 }
 
-.team .box .box-body a .url {
+.team .box .box-body > a .url {
     width: 90px;
     height: 36px;
-    background: #2F7AF4;
+    background: #D8384D;
     color: #fff;
-    font-size: 15px;
-    margin: 10px auto 0 auto;
+    font-size: 14px;
+    margin: 5px auto 0 auto;
     border: 0;
-    border-radius: 3px;
+    border-radius: 5px;
     outline: 0;
 }
 
@@ -98,8 +99,9 @@ li {
     color: #D8384D;
 }
 
+/*땡스투 박스*/
 .thanks .box-2 .body .name {
-    font-size: 24px;
+    font-size: 22px;
     font-weight: bold;
     text-align: center;
     margin-top: 20px;
@@ -109,7 +111,7 @@ li {
     display: flex;
     width: 800px;
     height: 200px;
-    margin-left: 180px;
+    margin: auto;
 }
 
 .thanks .box-2 > li {
@@ -135,6 +137,8 @@ li {
     display: block;
 }
 
+
+/*footer*/
 footer {
     height: 120px;
 }
