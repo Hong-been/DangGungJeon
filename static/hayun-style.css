@@ -36,6 +36,12 @@ ul li a {
 	text-decoration: none;
 }
 
+ul ul li a {
+	font-size: 18px;
+	color: black;
+	padding-top: 0;
+}
+
 .form-control {
 	background-color: #fddecc;
 	border-top: none;
@@ -44,10 +50,9 @@ ul li a {
 	border-bottom: 3px solid black;
 }
 
-.btn-outline-secondary {
+.search-btn {
 	background-color: #fddecc;
 	border: none;
-	
 }
 
 .search-box {
@@ -58,3 +63,15 @@ ul li a {
 	padding-top: 30px;
 	padding-right: 15px;
 }
+
+#menu-list ul {
+	display: none;
+	position:absolute;
+	width: 480px;
+	background-color:#fddecc;
+}
+
+#menu-list li:hover ul {
+	display: block;
+}
+
