@@ -1,124 +1,122 @@
 .main_section {
-    height: 700px;
-    background-color: white;
+	height: 700px;
+	background-color: white;
 }
 
 .main_ico_arrow-L {
-    width: 80px;
-    height: 80px;
-    background-color: transparent;
-    border: transparent;
-    outline: transparent;
-    position: absolute;
-    margin: 150px auto auto auto;
-    text-indent: -9999px;
+	width: 80px;
+	height: 80px;
+	background-color: transparent;
+	border: transparent;
+	outline: transparent;
+	position: absolute;
+	margin: 150px auto auto auto;
+	text-indent: -9999px;
 }
 
 .main_ico_arrow-L:before {
-    content: "";
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    border-right: 2px solid #000;
-    border-bottom: 2px solid #000;
-    transform: translate(-50%, -50%) rotate(135deg);
+	content: "";
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	border-right: 2px solid #000;
+	border-bottom: 2px solid #000;
+	transform: translate(-50%, -50%) rotate(135deg);
 }
 
 .main_ico_arrow-L:after {
-    content: "";
-    width: 42px;
-    height: 2px;
-    position: absolute;
-    right: 18px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #000;
+	content: "";
+	width: 42px;
+	height: 2px;
+	position: absolute;
+	right: 18px;
+	top: 50%;
+	transform: translateY(-50%);
+	background: #000;
 }
 
 .main_like {
-    font-size: 30px;
-    width: 245px;
-    height: 35px;
-    top: 652px;
-    left: 47px;
-    margin: 50px auto 20px 50px;
+	font-size: 30px;
+	width: 245px;
+	height: 35px;
+	top: 652px;
+	left: 47px;
+	margin: 50px auto 20px 50px;
 }
 
 .main_card_columns {
-    height: 450px;
-    width: 0px;
-    margin: auto 30px auto 65px;
+	height: 450px;
+	width: 0px;
+	margin: auto 30px auto 65px;
 }
 
 .main_slidebox {
-    width: 300vw;
-    margin: auto;
+	width: 300vw;
+	margin: auto;
 }
 
 .main_slideitem {
-    width: 300px;
-    height: 450px;
-    float: left;
-    margin: auto 20px auto 40px;
+	width: 300px;
+	height: 450px;
+	float: left;
+	margin: auto 20px auto 40px;
 }
 
 .main_card_body {
-    width: 300px;
-    height: 600px;
+	width: 300px;
+	height: 600px;
 }
 
 .main_card_img {
-    width: 300px;
-    height: 400px;
-    top: 705px;
-    left: 400px;
-    margin: auto;
+	width: 300px;
+	height: 400px;
+	top: 705px;
+	left: 400px;
+	margin: auto;
 }
 
 .main_card_name {
-    color: black;
-    margin: 450px auto auto auto;
-    display: inline-block;
-    font-size: 24px;
-    text-align: center;
-    height: 400px;
+	color: black;
+	display: inline-block;
+	font-size: 24px;
+	text-align: center;
 }
 
 .main_ico_arrow-R {
-    width: 80px;
-    height: 80px;
-    background-color: transparent;
-    border: transparent;
-    outline: transparent;
-    position: absolute;
-    top: 650px;
-    right: 0;
-    margin: 150px auto auto auto;
-    text-indent: -9999px;
-    float: right;
+	width: 80px;
+	height: 80px;
+	background-color: transparent;
+	border: transparent;
+	outline: transparent;
+	position: absolute;
+	top: 650px;
+	right: 0;
+	margin: 150px auto auto auto;
+	text-indent: -9999px;
+	float: right;
 }
 
 .main_ico_arrow-R:before {
-    content: "";
-    width: 30px;
-    height: 30px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    border-left: 2px solid #000;
-    border-top: 2px solid #000;
-    transform: translate(-50%, -50%) rotate(135deg);
+	content: "";
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	border-left: 2px solid #000;
+	border-top: 2px solid #000;
+	transform: translate(-50%, -50%) rotate(135deg);
 }
 
 .main_ico_arrow-R:after {
-    content: "";
-    width: 42px;
-    height: 2px;
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    background: #000;
+	content: "";
+	width: 42px;
+	height: 2px;
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	background: #000;
 }
