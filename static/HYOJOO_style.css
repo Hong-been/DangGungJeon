@@ -1,9 +1,9 @@
-.mein_section {
+.main_section {
     height: 700px;
     background-color: white;
 }
 
-.mein_ico_arrow-L {
+.main_ico_arrow-L {
     width: 80px;
     height: 80px;
     background-color: transparent;
@@ -14,7 +14,7 @@
     text-indent: -9999px;
 }
 
-.mein_ico_arrow-L:before {
+.main_ico_arrow-L:before {
     content: "";
     width: 30px;
     height: 30px;
@@ -26,7 +26,7 @@
     transform: translate(-50%, -50%) rotate(135deg);
 }
 
-.mein_ico_arrow-L:after {
+.main_ico_arrow-L:after {
     content: "";
     width: 42px;
     height: 2px;
@@ -37,7 +37,7 @@
     background: #000;
 }
 
-.mein_like {
+.main_like {
     font-size: 30px;
     width: 245px;
     height: 35px;
@@ -46,30 +46,30 @@
     margin: 50px auto 20px 50px;
 }
 
-.mein_card_columns {
+.main_card_columns {
     height: 450px;
     width: 0px;
     margin: auto 30px auto 65px;
 }
 
-.mein_slidebox {
+.main_slidebox {
     width: 300vw;
     margin: auto;
 }
 
-.mein_slideitem {
+.main_slideitem {
     width: 300px;
     height: 450px;
     float: left;
     margin: auto 20px auto 40px;
 }
 
-.mein_card_body {
+.main_card_body {
     width: 300px;
     height: 600px;
 }
 
-.mein_card_img {
+.main_card_img {
     width: 300px;
     height: 400px;
     top: 705px;
@@ -77,7 +77,7 @@
     margin: auto;
 }
 
-.mein_card_name {
+.main_card_name {
     color: black;
     margin: 450px auto auto auto;
     display: inline-block;
@@ -86,7 +86,7 @@
     height: 400px;
 }
 
-.mein_ico_arrow-R {
+.main_ico_arrow-R {
     width: 80px;
     height: 80px;
     background-color: transparent;
@@ -100,7 +100,7 @@
     float: right;
 }
 
-.mein_ico_arrow-R:before {
+.main_ico_arrow-R:before {
     content: "";
     width: 30px;
     height: 30px;
@@ -112,7 +112,7 @@
     transform: translate(-50%, -50%) rotate(135deg);
 }
 
-.mein_ico_arrow-R:after {
+.main_ico_arrow-R:after {
     content: "";
     width: 42px;
     height: 2px;
