@@ -10,7 +10,7 @@
 	justify-content: space-between;
 }
 /*menu 하위 nav 에 클래스 입력*/
-.logo {
+.main_page_top .logo {
 	margin: 0px 20px 10px 30px;
 	float: left;
 	padding-top: 20px;
