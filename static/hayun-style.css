@@ -1,11 +1,10 @@
 .main_page_top {
 	background-color: #fddecc;
-
-	/* height: 500px; */
-
+	padding-bottom: 30px;
 	background-size: cover;
 	background-position: center;
 }
+
 .menu-nav {
 	display: flex;
 	justify-content: space-between;
@@ -32,7 +31,6 @@
 	background-color: #fddecc;
 }
 
-
 .menu-list li {
 	float: left;
 	margin-right: 25px;
@@ -48,7 +46,6 @@
 #menu-list li:hover ul {
 	display: block;
 }
-
 
 .menu-list .submenu li a {
 	font-size: 18px;
