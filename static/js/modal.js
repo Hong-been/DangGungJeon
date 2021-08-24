@@ -17,6 +17,7 @@ function openModalCate(event) {
 
 	modalImg["src"] = target["src"];
 	modalName.innerText = targetName;
+	getModalInfo(targetName);
 
 	modal.classList.remove("hidden");
 }
@@ -28,8 +29,28 @@ function openModalIndex(event) {
 
 	modalImg["src"] = target["src"];
 	modalName.innerText = targetName;
+	getModalInfo(targetName);
 
 	modal.classList.remove("hidden");
+}
+function getModalInfo(targetName) {
+	let url = `/modal?keyword_give=${targetName}`;
+	//서버에게 "keoword_give"로 전시회명을 준다.
+	//서버가 디비에서 해당전시회에 대한 json데이터를 넘겨준다.
+	//넘기는 데이터의 이름은 "modal_info"로 임시작성함.
+	$.ajax({
+		type: "GET",
+		url: url,
+		data: {},
+		//DB key값이 아직 안정해져서 date, place로 임시작성함.
+		success: function (response) {
+			let info = response["modal_info"];
+			console.log(info);
+
+			modalDate.innerText = info["date"];
+			modalPlace.innerText = info["place"];
+		},
+	});
 }
 
 modalCloseBtn.addEventListener("click", () => {
