@@ -80,6 +80,7 @@ a {
 	border-color: var(--brown-color);
 	border-radius: 30px;
 	width: 80%;
+	height: fit-content;
 	background-color: white;
 	justify-content: space-between;
 }
