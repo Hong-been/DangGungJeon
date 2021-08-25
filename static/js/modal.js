@@ -73,10 +73,11 @@ indexImages.forEach((current) => {
 cateImages.forEach((current) => {
 	current.addEventListener("click", openModalCate);
 });
-repEXhbn.addEventListener("click", openModalRep, {
-	capture: true,
-});
-
+if (repEXhbn) {
+	repEXhbn.addEventListener("click", openModalRep, {
+		capture: true,
+	});
+}
 modalCloseBtn.addEventListener("click", () => {
 	modal.classList.add("hidden");
 });
