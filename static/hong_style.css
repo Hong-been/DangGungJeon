@@ -121,9 +121,15 @@ a {
 	font-weight: bold;
 	padding-bottom: var(--padding-medium);
 }
-.modal .modal-info .modal-desc .modal-desc-map {
+.modal .modal-info .modal-desc #map {
+	display: flex;
+	flex-direction: column;
 	height: 50%;
 	width: 100%;
+}
+.modal .modal-info .modal-desc .modal-desc-map {
+	width: 100%;
+	height: 100%;
 	border: thin solid var(--brown-color);
 	border-radius: 10px;
 }

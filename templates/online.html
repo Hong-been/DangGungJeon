@@ -19,6 +19,12 @@
 			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
 			crossorigin="anonymous"
 		></script>
+
+		<!-- services 라이브러리 불러오기 -->
+		<script
+			type="text/javascript"
+			src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e280cfc8de183978d78ddbd23e9bc345&libraries=services"
+		></script>
 		<script src="../../static/js/modal.js" defer></script>
 
 		<!-- 구글폰트 -->
@@ -29,22 +35,27 @@
 
 		<link rel="stylesheet" href="/static/style.css" />
 		<link rel="stylesheet" href="/static/hayun-style.css" />
-		<link rel="stylesheet" href="/static/category_style.css" />
 		<link rel="stylesheet" href="/static/hong_style.css" />
+		<link rel="stylesheet" href="/static/HYOJOO_style.css" />
+		<link rel="stylesheet" href="/static/category_style.css" />
 		<title>당궁전, 당신이 궁금한 모든 전시회</title>
 	</head>
+
 	<body>
-		<!-- modal  -->
+		<!-- modal  홍빈홍빈-->
 		<article class="hidden modal">
 			<button class="modal-closebtn">X</button>
 			<div class="modal-info">
 				<img class="modal-img" src="/static/sample.png" />
 				<div class="modal-desc">
-					<span class="modal-desc-name">온라인1</span>
+					<span class="modal-desc-name">앨리스 달튼 브라운</span>
 					<span class="modal-desc-date">🗓 2021.7.22 ~ 2021.9.10</span>
 					<span class="modal-desc-place">🗺 마이아트뮤지엄</span>
 					<a class="modal-desc-url" href="">마이아트뮤지엄</a>
-					<span class="modal-desc-map">지도넣을 자리!</span>
+					<div id="map">
+						<span class="modal-desc-adress"></span>
+						<span class="modal-desc-map"></span>
+					</div>
 				</div>
 			</div>
 		</article>
