@@ -2,6 +2,7 @@
 	/* color */
 	--peach-color: hsl(23, 93%, 89%);
 	--brown-color: #75543d;
+	--darkpeach-color: #f9cdad;
 
 	/* font */
 	--font-large: 4em;
@@ -42,6 +43,11 @@ a {
 	display: flex;
 	justify-content: space-between;
 	padding: var(--padding-large);
+	margin-bottom: var(--padding-large);
+}
+.main .main-exhibition:hover {
+	background-color: var(--darkpeach-color);
+	cursor: pointer;
 }
 .main .main-exhibition .exhibition-desc {
 	display: flex;

@@ -6,8 +6,9 @@ const modal = document.querySelector(".modal"),
 	modalPlace = modal.querySelector(".modal-desc-place"),
 	modalUrl = modal.querySelector(".modal-desc-url");
 
-const IndexImages = document.querySelectorAll(".main_card_img"),
-	CateImages = document.querySelectorAll(".exhibition-img");
+const indexImages = document.querySelectorAll(".main_card_img"),
+	cateImages = document.querySelectorAll(".exhibition-img"),
+	repEXhbn = document.querySelector(".main-exhibition");
 
 function openModalCate(event) {
 	event.preventDefault();
@@ -33,6 +34,19 @@ function openModalIndex(event) {
 
 	modal.classList.remove("hidden");
 }
+function openModalRep(event) {
+	event.preventDefault();
+
+	const target = event.currentTarget;
+	const targetName = target.querySelector(".exhibition-name").innerText;
+
+	modalImg["src"] = target.querySelector(".exhibition-img")["src"];
+	modalName.innerText = targetName;
+
+	getModalInfo(targetName);
+
+	modal.classList.remove("hidden");
+}
 function getModalInfo(targetName) {
 	let url = `/modal?keyword_give=${targetName}`;
 	//서버에게 "keoword_give"로 전시회명을 준다.
@@ -53,14 +67,16 @@ function getModalInfo(targetName) {
 	});
 }
 
-modalCloseBtn.addEventListener("click", () => {
-	modal.classList.add("hidden");
-});
-
-IndexImages.forEach((current) => {
+indexImages.forEach((current) => {
 	current.addEventListener("click", openModalIndex);
 });
-
-CateImages.forEach((current) => {
+cateImages.forEach((current) => {
 	current.addEventListener("click", openModalCate);
+});
+repEXhbn.addEventListener("click", openModalRep, {
+	capture: true,
+});
+
+modalCloseBtn.addEventListener("click", () => {
+	modal.classList.add("hidden");
 });

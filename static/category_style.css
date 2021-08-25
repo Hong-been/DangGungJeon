@@ -2,6 +2,7 @@
 	/* color */
 	--peach-color: hsl(23, 93%, 89%);
 	--brown-color: #75543d;
+	--darkpeach-color: #f9cdad;
 
 	/* font */
 	--font-large: 4em;
@@ -61,7 +62,7 @@ header {
 	border-radius: 10px;
 }
 .category-main .exhibition-list .exhibition:hover {
-	background-color: var(--peach-color);
+	background-color: var(--darkpeach-color);
 }
 .category-main .exhibition-list .exhibition .exhibition-img {
 	width: var(--img-width);

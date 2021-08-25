@@ -1,6 +1,11 @@
+:root {
+	--darkpeach-color: #f9cdad;
+}
+
 .main_section {
 	height: 700px;
 	background-color: white;
+	padding-top: 10px;
 }
 
 .main_ico_arrow-L {
@@ -43,7 +48,7 @@
 	height: 35px;
 	top: 652px;
 	left: 47px;
-	margin: 50px auto 20px 50px;
+	margin: 20px auto 20px 50px;
 }
 
 .main_card_columns {
@@ -58,15 +63,20 @@
 }
 
 .main_slideitem {
-	width: 300px;
-	height: 450px;
+	/* width: 300px; */
+	height: fit-content;
 	float: left;
-	margin: auto 20px auto 40px;
+	margin: 10px;
+	padding: 20px;
+	border-radius: 10px;
+}
+.main_slideitem:hover {
+	background-color: var(--darkpeach-color);
 }
 
 .main_card_body {
 	width: 300px;
-	height: 600px;
+	height: fit-content;
 }
 
 .main_card_img {
@@ -82,6 +92,7 @@
 	display: inline-block;
 	font-size: 24px;
 	text-align: center;
+	padding: 10px;
 }
 
 .main_ico_arrow-R {
