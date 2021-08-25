@@ -26,21 +26,22 @@ header {
 
 .our_work .contents1 .logo > img {
 	float: left;
-	width: 300px;
+	width: 420px;
 	height: 300px;
-	margin: atuo;
+	margin:auto;
 	/*background-color: red;*/
 }
 
 .our_work .contents1 .desc {
 	float: left;
-	width: 390px;
+	width: 380px;
 	height: 240px;
-	margin-top: 40px;
+	margin-top: 60px;
+	margin-left: 20px;
 	/*background-color: pink;*/
 }
 
-.our_work .contents1 .desc > h3 {
+.our_work .contents1 .desc > h5 {
 	margin-bottom: 30px;
 }
 
