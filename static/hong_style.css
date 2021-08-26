@@ -82,7 +82,7 @@ a {
 	border-width: thick;
 	border-color: var(--brown-color);
 	border-radius: 30px;
-	width: 80%;
+	width: 60%;
 	height: fit-content;
 	background-color: white;
 	justify-content: space-between;
@@ -97,6 +97,7 @@ a {
 .modal .modal-img {
 	padding: 0 var(--padding-small);
 	border-radius: 30px;
+	width: 40%;
 }
 
 .modal .modal-info {
@@ -109,7 +110,7 @@ a {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	font-size: var(--font-small);
+	font-size: var(--font-micro);
 	padding: 0 var(--padding-medium);
 }
 .modal .modal-info .modal-desc .modal-desc-name {
@@ -132,6 +133,6 @@ a {
 
 @media screen and (min-width: 1000px) {
 	.modal {
-		width: 900px;
+		width: 750px;
 	}
 }
