@@ -38,8 +38,4 @@ def aboutUs():
 
 
 if __name__ == '__main__':
-<<<<<<< HEAD
-    app.run('0.0.0.0', port=5000, debug=True)
-=======
-   app.run(port=5000,debug=True)
->>>>>>> af21d2b7a9a41f446bcf30c31b0daa9993db6940
+    app.run(port=5000,debug=True)
