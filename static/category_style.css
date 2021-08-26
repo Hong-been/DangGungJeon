@@ -5,22 +5,21 @@
 	--darkpeach-color: #f9cdad;
 
 	/* font */
-	--font-large: 4em;
-	--font-medium: 1.8em;
+	--font-large: 2em;
+	--font-medium: 1.5em;
 	--font-small: 1.3em;
 	--font-micro: 0.8em;
 
 	/* padding */
-	--padding-side: 100px;
-	--padding-side-small: 60px;
-
-	--padding-large: 30px;
-	--padding-medium: 20px;
-	--padding-small: 10px;
+	--padding-side: 3em;
+	--padding-side-small: 2.5em;
+	--padding-large: 2em;
+	--padding-medium: 1.2em;
+	--padding-small: 0.8em;
 
 	/* image */
-	--img-width: 300px;
-	--img-height: 400px;
+	--img-width: 210px;
+	--img-height: 280px;
 }
 * {
 	padding: 0;
@@ -47,7 +46,7 @@ header {
 	padding: 0 var(--padding-side-small);
 }
 .category-main .category-name {
-	font-size: var(--font-medium);
+	font-size: var(--font-small);
 	font-weight: bold;
 	padding: var(--padding-side-small) 0 0 var(--font-small);
 }
