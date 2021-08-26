@@ -15,10 +15,6 @@
 	--padding-large: 2em;
 	--padding-medium: 1.2em;
 	--padding-small: 0.8em;
-
-	/* image */
-	--img-width: 300px;
-	--img-height: 400px;
 }
 * {
 	padding: 0;
@@ -99,7 +95,6 @@ a {
 	font-size: var(--font-medium);
 }
 .modal .modal-img {
-	height: 540px;
 	padding: 0 var(--padding-small);
 	border-radius: 30px;
 }
