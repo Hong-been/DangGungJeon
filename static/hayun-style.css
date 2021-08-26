@@ -40,7 +40,7 @@
 }
 
 .menu-list li a {
-	font-size: 25px;
+	font-size: 20px;
 	color: black;
 	font-weight: normal;
 	text-decoration: none;
@@ -57,7 +57,7 @@
 }
 
 .menu-list .submenu li a {
-	font-size: 18px;
+	font-size: 15px;
 	color: black;
 	padding-top: 0;
 }
@@ -67,19 +67,22 @@
 	border-top: none;
 	border-left: none;
 	border-right: none;
-	border-bottom: 3px solid black;
+	border-bottom: 1px solid black;
+	border-radius: 0;
 }
 
 .search-btn {
 	background-color: #fddecc;
 	border: none;
 }
+.search-btn img {
+	width: 16px;
+	height: 16px;
+}
 
 .search-box {
-	width: 250px;
-	height: 45px;
-	/* float: right; */
-	/* padding-right: 10px; */
-	padding-top: 30px;
+	width: 200px;
+	height: 40px;
+	padding-top: 20px;
 	padding-right: 15px;
 }
