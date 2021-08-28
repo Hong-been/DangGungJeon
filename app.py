@@ -1,22 +1,21 @@
 from flask import Flask, render_template, jsonify
 
+from pymongo import MongoClient
+client = MongoClient('mongodb://test:test@3.35.235.141', 27017)
+db = client.dbDGJ
+
 app = Flask(__name__)
 
-<<<<<<< HEAD
+# <<<<<<< HEAD
 # 여기
 import requests
 from bs4 import BeautifulSoup
 
-from pymongo import MongoClient
-
-client = MongoClient('mongodb://test:test@13.125.33.170', 27017)
-db = client.dbDGJ
-
 # 여기
-=======
-from pymongo import MongoClient
-client = MongoClient('mongodb://test:test@13.125.33.170', 27017)
-db = client.dbDGJ
+# =======
+# from pymongo import MongoClient
+# client = MongoClient('mongodb://test:test@13.125.33.170', 27017)
+# db = client.dbDGJ
 # # 여기
 # import requests
 # from bs4 import BeautifulSoup
@@ -70,7 +69,7 @@ db = client.dbDGJ
 #
 #
 # # 여기
->>>>>>> 980432a3bb54cb81ba4016fa0486de58b81685ba
+# >>>>>>> 980432a3bb54cb81ba4016fa0486de58b81685ba
 
 # Home
 @app.route('/')
@@ -88,10 +87,11 @@ def top():
 @app.route('/closing')
 def closing():
     return render_template('closing_soon.html')
+
 @app.route('/list_Closing', methods=['GET'])
 def listingClosing():
     closing = list(db.closing_soon.find({}, {'_id': False}).sort("dday",1))
-    return jsonify({'all_Closing': closing})
+    return jsonify({'all_closing': closing})
 
 # 무료전시 카테고리
 @app.route('/free')
@@ -104,14 +104,11 @@ def free():
 def online():
     return render_template('online.html')
 
-<<<<<<< HEAD
-=======
 @app.route('/list_online', methods=['GET'])
 def listingOnline():
     online = list(db.online.find({}, {'_id': False}))
     return jsonify({'all_online': online})
 
->>>>>>> 980432a3bb54cb81ba4016fa0486de58b81685ba
 # About Us 카테고리
 @app.route('/about_us')
 def aboutUs():
