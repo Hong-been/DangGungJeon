@@ -8,7 +8,7 @@ function showClosing() {
         url: "/list_Closing",
         data: {},
         success: function (response) {
-            let closing = response['all_Closing']
+            let closing = response['all_closing']
             for (let i = 0; i < closing.length; i++) {
                 let title = closing[i]['title']
                 let image = closing[i]['image']
