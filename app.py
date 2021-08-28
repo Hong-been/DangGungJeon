@@ -1,13 +1,15 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, jsonify
 
 app = Flask(__name__)
 
+from pymongo import MongoClient
+client = MongoClient('mongodb://test:test@13.125.33.170', 27017)
+db = client.dbDGJ
 # # 여기
 # import requests
 # from bs4 import BeautifulSoup
 #
 # from pymongo import MongoClient
-#
 # client = MongoClient('localhost', 27017)
 # db = client.dbsparta
 #
@@ -86,6 +88,10 @@ def free():
 def online():
     return render_template('online.html')
 
+@app.route('/list_online', methods=['GET'])
+def listingOnline():
+    online = list(db.online.find({}, {'_id': False}))
+    return jsonify({'all_online': online})
 
 # About Us 카테고리
 @app.route('/about_us')
