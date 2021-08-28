@@ -71,11 +71,14 @@ def top():
     return render_template('top50.html')
 
 
-# 종료임박 카테고리
+# 종료예정 카테고리
 @app.route('/closing')
 def closing():
     return render_template('closing_soon.html')
-
+@app.route('/list_Closing', methods=['GET'])
+def listingClosing():
+    closing = list(db.closing_soon.find({}, {'_id': False}).sort("dday",1))
+    return jsonify({'all_Closing': closing})
 
 # 무료전시 카테고리
 @app.route('/free')
