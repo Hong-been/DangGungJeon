@@ -12,17 +12,17 @@ app = Flask(__name__)
 
 import requests
 from bs4 import BeautifulSoup
-
-from pymongo import MongoClient
-
-client = MongoClient('mongodb://test:test@13.125.33.170', 27017)
-db = client.dbDGJ
-
-# =======
-from pymongo import MongoClient
-
-client = MongoClient('mongodb://test:test@13.125.33.170', 27017)
-db = client.dbDGJ
+#
+# from pymongo import MongoClient
+#
+# client = MongoClient('mongodb://test:test@13.125.33.170', 27017)
+# db = client.dbDGJ
+#
+# # =======
+# from pymongo import MongoClient
+#
+# client = MongoClient('mongodb://test:test@13.125.33.170', 27017)
+# db = client.dbDGJ
 
 
 # =======
