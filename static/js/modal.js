@@ -5,12 +5,26 @@ const modal = document.querySelector(".modal"),
 	modalDate = modal.querySelector(".modal-desc-date"),
 	modalPlace = modal.querySelector(".modal-desc-place"),
 	modalUrl = modal.querySelector(".modal-desc-url"),
-	modalAdress = modal.querySelector(".modal-desc-adress");
-modalMap = modal.querySelector(".modal-desc-map");
+	modalAdress = modal.querySelector(".modal-desc-adress"),
+	modalMap = modal.querySelector(".modal-desc-map");
 
-const indexImages = document.querySelectorAll(".main_card_img"),
-	cateImages = document.querySelectorAll(".category-main .exhibition-img"),
-	repEXhbn = document.querySelector(".main-exhibition");
+let indexImages, cateImages, repEXhbn;
+
+window.setTimeout(() => {
+	(indexImages = document.querySelectorAll(".main_card_img")),
+		(cateImages = document.querySelectorAll(".category-main .exhibition-img")),
+		(repEXhbn = document.querySelector(".main-exhibition"));
+
+	indexImages.forEach((current) => {
+		current.addEventListener("click", openModalIndex);
+	});
+	cateImages.forEach((current) => {
+		current.addEventListener("click", openModalCate);
+	});
+	if (repEXhbn) {
+		repEXhbn.addEventListener("click", openModalRep);
+	}
+}, 500);
 
 function makeModalMap(location) {
 	console.log("지도를 가져올 키워드: ", location);
@@ -132,15 +146,6 @@ function getModalInfo(targetName) {
 	});
 }
 
-indexImages.forEach((current) => {
-	current.addEventListener("click", openModalIndex);
-});
-cateImages.forEach((current) => {
-	current.addEventListener("click", openModalCate);
-});
-if (repEXhbn) {
-	repEXhbn.addEventListener("click", openModalRep);
-}
 modalCloseBtn.addEventListener("click", () => {
 	modal.classList.add("hidden");
 });
