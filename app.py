@@ -1,4 +1,4 @@
-from flask import Flask, render_template, jsonify
+from flask import Flask, render_template, jsonify,request
 
 from pymongo import MongoClient
 
@@ -91,6 +91,23 @@ def listingOnline():
 def aboutUs():
     return render_template('about_us.html')
 
+# Get modal info
+@app.route('/modal', methods=['GET'])
+def modal_info():
+    receive = request.args.get('keyword_give')
+    modal_info=db.top50.find_one({'title':receive}, {'_id':False})
+    
+    if modal_info is None:
+        modal_info=db.online.find_one({'title':receive}, {'_id':False})
 
+    if modal_info is None:
+        modal_info=db.free.find_one({'title':receive}, {'_id':False})
+        
+    if modal_info is None:
+        modal_info=db.closing_soon.find_one({'title':receive}, {'_id':False})
+
+    print(receive, modal_info)
+    return jsonify({'modal_info': modal_info})
+    
 if __name__ == '__main__':
     app.run(port=5000, debug=True)

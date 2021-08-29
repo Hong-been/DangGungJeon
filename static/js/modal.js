@@ -121,26 +121,34 @@ function openModalRep(event) {
 	modal.classList.remove("hidden");
 }
 function getModalInfo(targetName) {
-	makeModalMap("마이아트뮤지엄"); //db연결 후에 삭제 예정!
-
 	//title / date / location / map / image
 	let url = `/modal?keyword_give=${targetName}`;
+
 	//서버에게 "keoword_give"로 전시회명을 준다.
 	//서버가 디비에서 해당전시회에 대한 json데이터를 넘겨준다.
-	//넘기는 데이터의 이름은 "modal_info"로 임시작성함.
 	$.ajax({
 		type: "GET",
 		url: url,
 		data: {},
-		//DB key값이 아직 안정해져서 date, place로 임시작성함.
 		success: function (response) {
 			let info = response["modal_info"];
 			console.log(info);
 			const date = info["date"];
 			const location = info["location"];
+			const page = info["page"];
+			const url = info["url"];
 
 			modalDate.innerText = date;
 			modalPlace.innerText = location;
+
+			modalUrl["target"] = "_blank";
+			if (page) {
+				modalUrl.innerText = "예매하러가기!";
+				modalUrl["href"] = url;
+			} else if (url) {
+				modalUrl.innerText = "웹사이트 구경가기!";
+				modalUrl["href"] = url;
+			}
 			makeModalMap(location);
 		},
 	});
