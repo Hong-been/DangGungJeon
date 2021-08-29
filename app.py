@@ -90,7 +90,7 @@ def closing():
 
 @app.route('/list_Closing', methods=['GET'])
 def listingClosing():
-    closing = list(db.closing_soon.find({}, {'_id': False}).sort("dday",1))
+    closing = list(db.closing_soon.find({}, {'_id': False}))
     return jsonify({'all_closing': closing})
 
 # 무료전시 카테고리
