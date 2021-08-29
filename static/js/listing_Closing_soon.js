@@ -13,7 +13,7 @@ function showClosing() {
                 let title = closing[i]['title']
                 let image = closing[i]['image']
                 let dday = closing[i]['dday']
-                let temp_html = `<li class="exhibition" >
+                let temp_html = `<li class="exhibition circle" >
                                     <a><img class="exhibition-img" src="${image}"/></a>
                                     <span class="exhibition-name">${title}</span>
                                     <p class="dday">${dday}</p>
