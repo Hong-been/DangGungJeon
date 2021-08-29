@@ -1,19 +1,22 @@
+$(document).ready(function () {
+    showfree();
+});
 
 function showfree() {
     $.ajax({
         type: "GET",
-        url: "/free",
+        url: "/list_free",
         data: {},
         success: function (response) {
-            let free = respons['all_free']
-            for (let i = 0; i < free.length; i++){
-                let title = free[i] ['title']
-                let image = free[i] ['image']
+            let free = response['all_free']
+            for (let i = 0; i < free.length; i++) {
+                let title = free[i]['title']
+                let image = free[i]['image']
 
-                let temp_html =`<li class="exhibition">
-\t\t\t\t\t<a><img class="exhibition-img" src="/static/sample.png" /></a>
-\t\t\t\t\t<span class="exhibition-name">무료전시1</span>
-\t\t\t\t</li>`
+                let temp_html = `<li class="exhibition">
+                                    <a><img class="exhibition-img" src="${image}"/></a>
+                                    <span class="exhibition-name">${title}</span>
+                                </li>`
 
                 $('#free').append(temp_html)
             }

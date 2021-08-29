@@ -60,8 +60,8 @@ def free():
     return render_template('free.html')
 
 
-@app.route('/free', methods=['GET'])
-def listing():
+@app.route('/list_free', methods=['GET'])
+def listingfree():
     free = list(db.free.find({}, {'_id': False}))
     return jsonify({'all_free': free})
 
