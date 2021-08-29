@@ -40,7 +40,10 @@ def home():
 @app.route('/top50')
 def top():
     return render_template('top50.html')
-
+@app.route('/list_top50', methods=['GET'])
+def listingTop50():
+    top50 = list(db.top50.find({}, {'_id': False}))
+    return jsonify({'all_top50': top50})
 
 # 종료예정 카테고리
 @app.route('/closing')
