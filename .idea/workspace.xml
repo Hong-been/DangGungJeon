@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1ebdbd53-f06a-4eb8-9208-b5a4b700afeb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/static/js/free.js" beforeDir="false" afterPath="$PROJECT_DIR$/static/js/free.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/free.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/free.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/online.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/online.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/about_us.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about_us.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +102,8 @@
       <workItem from="1630204090559" duration="316000" />
       <workItem from="1630204465200" duration="939000" />
       <workItem from="1630205503434" duration="887000" />
-      <workItem from="1630216668417" duration="1326000" />
+      <workItem from="1630216668417" duration="1933000" />
+      <workItem from="1630222547484" duration="642000" />
     </task>
     <servers />
   </component>
@@ -127,6 +125,6 @@
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/app_py$Dang_Gung_Jeon.coverage" NAME="Dang-Gung-Jeon Coverage Results" MODIFIED="1630162379209" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/Dang_Gung_Jeon$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1630066803744" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/app_py$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1630217939261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/app_py$Flask__app_py_.coverage" NAME="Flask (app.py) Coverage Results" MODIFIED="1630222554946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
 </project>
