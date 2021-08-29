@@ -34,7 +34,12 @@ from bs4 import BeautifulSoup
 @app.route('/')
 def home():
     return render_template('index.html')
-
+#
+# @app.route('/list_top10', methods=['GET'])
+# def listingtop10():
+#     top10 = list(db.top50.find({}, {'_id': False}))
+#     return jsonify({'all_top10': top10})
+#
 
 # TOP50 카테고리
 @app.route('/top50')
