@@ -16,9 +16,7 @@ function showTop50() {
 
 				let temp_html = `<li class="exhibition">
                                     <a><img class="exhibition-img" src="${image}"/></a>
-                                    <span class="exhibition-name">TOP ${
-																			i + 1
-																		}. ${title}</span>
+                                    <span class="exhibition-name">${title}</span>
                                 </li>`;
 
 				$("#top50").append(temp_html);
