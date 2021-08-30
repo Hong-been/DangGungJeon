@@ -5,7 +5,7 @@ $(document).ready(function () {
 function showClosing() {
     $.ajax({
         type: "GET",
-        url: "/list_Closing",
+        url: "/closing/list",
         data: {},
         success: function (response) {
             let closing = response['all_closing']

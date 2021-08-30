@@ -6,7 +6,7 @@ function showTop50() {
 	$("#top50").empty();
 	$.ajax({
 		type: "GET",
-		url: "/list_top50",
+		url: "/top50/list",
 		data: {},
 		success: function (response) {
 			let top50 = response["all_top50"];
