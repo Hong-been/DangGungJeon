@@ -3,6 +3,7 @@ $(document).ready(function () {
 });
 
 function showOnline() {
+    $("#online").empty();
     $.ajax({
         type: "GET",
         url: "/online/list",

@@ -3,6 +3,7 @@ $(document).ready(function () {
 });
 
 function showClosing() {
+    $("#closing_soon").empty();
     $.ajax({
         type: "GET",
         url: "/closing/list",
