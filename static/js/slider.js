@@ -81,12 +81,10 @@ nextBtn.addEventListener("click", showNext);
 //                 let title = top10[i]['title']
 //                 let image = top10[i]['image']
 //
-//                 let temp_html = `<li class="main_slideitem">
-//                                     <div class="main_card_body">
-// 								        <a><img class="main_card_img" src="${image}"/>
-// 								        </a>
-// 								<span class="main_card_name">${title}</span>
-// 							</div> </li>`
+//                 let temp_html = `<div class="main_card_body">
+//                                     <a><img class="main_card_img" src="${image}"/></a>
+//                                     <span class="main_card_name">${titlie}</span>
+//                                 </div>`
 //
 //                 $('#top10').append(temp_html)
 //             }
