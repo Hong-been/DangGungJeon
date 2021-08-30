@@ -144,7 +144,7 @@ function getModalInfo(targetName) {
 			modalUrl["target"] = "_blank";
 			if (page) {
 				modalUrl.innerText = "예매하러가기!";
-				modalUrl["href"] = url;
+				modalUrl["href"] = page;
 			} else if (url) {
 				modalUrl.innerText = "웹사이트 구경가기!";
 				modalUrl["href"] = url;
