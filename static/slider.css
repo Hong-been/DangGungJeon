@@ -94,8 +94,8 @@ a {
 }
 .main_section .main_card_columns .main_card_body .main_card_name {
 	padding-top: var(--padding-small);
-	font-size: var(--font-small);
-	text-align: center;
+	font-size: var(--font-micro);
+	width: var(--img-width);
 }
 
 /* Responsive */
@@ -111,6 +111,7 @@ a {
 		padding: var(--padding-small);
 	}
 	.main_section .main_card_columns .main_card_body .main_card_name {
+		width: 9em;
 		font-size: var(--font-micro);
 	}
 }
@@ -123,6 +124,7 @@ a {
 		height: 9.3em;
 	}
 	.main_section .main_card_columns .main_card_body .main_card_name {
+		width: 7em;
 		font-size: var(--font-micro);
 	}
 }

@@ -21,11 +21,12 @@ def sampling():
     element = random.choice(elements)
     return jsonify({'one': element})
 
-# @app.route('/list_top10', methods=['GET'])
-# def listingtop10():
-#     top10 = list(db.top50.find({}, {'_id': False}))
-#     return jsonify({'all_top10': top10})
-#
+@app.route('/list_top10', methods=['GET'])
+def listingtop10():
+    top10 = list(db.top50.find({}, {'_id': False}))[:10]
+    print(top10)
+    return jsonify({'all_top10': top10})
+
 
 # TOP50 카테고리
 @app.route('/top50')
