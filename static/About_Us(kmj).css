@@ -17,28 +17,24 @@ header {
 }
 
 .our_work .contents1 {
-	width: 840px;
-	height: 350px;
+	width: 800px;
 	display: flex;
-	margin: 10px auto 70px auto;
-	/*background-color: green;*/
+	margin: 60px auto 0 auto;
 }
 
 .our_work .contents1 .logo > img {
 	float: left;
-	width: 420px;
+	width: 300px;
 	height: 300px;
-	margin:auto;
-	/*background-color: red;*/
+	margin-left: 50px;
 }
 
 .our_work .contents1 .desc {
 	float: left;
-	width: 380px;
-	height: 240px;
-	margin-top: 60px;
-	margin-left: 20px;
-	/*background-color: pink;*/
+	width: 420px;
+	height: 200px;
+	margin-top: 50px;
+	margin-left: 50px;
 }
 
 .our_work .contents1 .desc > h5 {
@@ -62,46 +58,45 @@ header {
 .team .box {
 	display: flex;
 	width: 840px;
-	height: 320px;
+	height: 380px;
 	margin: auto;
 }
 
 .team .box > li {
 	flex: 1;
-	height: 320px;
-}
-
-.team .box > li:not(:last-child) {
-	margin-right: 30px;
-}
-
-li {
+	height: 360px;
 	list-style: none;
 	padding-left: 0px;
 }
 
+.team .box > li:not(:last-child) {
+	margin-right: 20px;
+}
+
+
 /* 팀원 개별 박스*/
-.team .box .solo {
+.team .box .space {
 	margin: auto;
 	display: block;
 }
 
-.team .box .solo > img {
+.team .box .space > img {
 	width: 60px;
 	height: 60px;
-	margin: 110px auto 0 auto;
+	margin: 120px auto 0 auto;
 	display: block;
 }
 
 .team .box .box-body {
 	text-align: center;
 	margin: auto;
+	/*background-color: yellowgreen;*/
 }
 
 .team .box .box-body > img {
 	width: 160px;
-	height: 140px;
-	margin: 10px auto 5px auto;
+	height: 150px;
+	margin: 0 auto 10px auto;
 	display: block;
 }
 
@@ -112,10 +107,18 @@ li {
 	margin: auto;
 }
 
-.team .box .box-body .text {
-	width: 240px;
+.team .box .box-body .text1 {
+	width: 250px;
+	height: 70px;
 	font-size: 12px;
-	margin: 5px auto 5px auto;
+	margin: 5px auto 10px auto;
+}
+
+.team .box .box-body .text2 {
+	width: 250px;
+	height: 100px;
+	font-size: 12px;
+	margin: 5px auto 10px auto;
 }
 
 .team .box .box-body > button {
@@ -125,7 +128,7 @@ li {
 	width: 85px;
 	height: 40px;
 	font-size: 14px;
-	margin: 5px auto 0 auto;
+	margin: auto;
 	text-align: center;
 	border-radius: 5px;
 	transition-duration: 0.4s;

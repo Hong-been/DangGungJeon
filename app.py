@@ -7,34 +7,20 @@ db = client.dbDGJ
 
 app = Flask(__name__)
 
-# <<<<<<< HEAD
-# << << << < HEAD
+import random
 
-import requests
-from bs4 import BeautifulSoup
-#
-# from pymongo import MongoClient
-#
-# client = MongoClient('mongodb://test:test@13.125.33.170', 27017)
-# db = client.dbDGJ
-#
-# # =======
-# from pymongo import MongoClient
-#
-# client = MongoClient('mongodb://test:test@13.125.33.170', 27017)
-# db = client.dbDGJ
-
-
-# =======
-
-# >>>>>>> 3a713109aea07980d60f08074de4a65691fc5a4a
-# >>>>>>> 980432a3bb54cb81ba4016fa0486de58b81685ba
 
 # Home
 @app.route('/')
 def home():
     return render_template('index.html')
-#
+
+@app.route('/random', methods=['GET'])
+def sampling():
+    elements = list(db.closing_soon.find({}, {'_id': False}))
+    element = random.choice(elements)
+    return jsonify({'one': element})
+
 # @app.route('/list_top10', methods=['GET'])
 # def listingtop10():
 #     top10 = list(db.top50.find({}, {'_id': False}))
@@ -45,7 +31,7 @@ def home():
 @app.route('/top50')
 def top():
     return render_template('top50.html')
-@app.route('/list_top50', methods=['GET'])
+@app.route('/top50/list', methods=['GET'])
 def listingTop50():
     top50 = list(db.top50.find({}, {'_id': False}))
     return jsonify({'all_top50': top50})
@@ -56,7 +42,7 @@ def closing():
     return render_template('closing_soon.html')
 
 
-@app.route('/list_Closing', methods=['GET'])
+@app.route('/closing/list', methods=['GET'])
 def listingClosing():
     closing = list(db.closing_soon.find({}, {'_id': False}))
     return jsonify({'all_closing': closing})
@@ -68,7 +54,7 @@ def free():
     return render_template('free.html')
 
 
-@app.route('/list_free', methods=['GET'])
+@app.route('/free/list', methods=['GET'])
 def listingfree():
     free = list(db.free.find({}, {'_id': False}))
     return jsonify({'all_free': free})
@@ -80,7 +66,7 @@ def online():
     return render_template('online.html')
 
 
-@app.route('/list_online', methods=['GET'])
+@app.route('/online/list', methods=['GET'])
 def listingOnline():
     online = list(db.online.find({}, {'_id': False}))
     return jsonify({'all_online': online})

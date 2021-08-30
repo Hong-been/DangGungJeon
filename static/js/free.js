@@ -5,7 +5,7 @@ $(document).ready(function () {
 function showfree() {
     $.ajax({
         type: "GET",
-        url: "/list_free",
+        url: "/free/list",
         data: {},
         success: function (response) {
             let free = response['all_free']

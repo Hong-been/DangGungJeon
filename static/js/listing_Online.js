@@ -5,7 +5,7 @@ $(document).ready(function () {
 function showOnline() {
     $.ajax({
         type: "GET",
-        url: "/list_online",
+        url: "/online/list",
         data: {},
         success: function (response) {
             let online = response['all_online']
