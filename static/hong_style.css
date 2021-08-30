@@ -14,7 +14,7 @@
 	--padding-side: 3em;
 	--padding-large: 2em;
 	--padding-medium: 1.2em;
-	--padding-small: 0.8em;
+	--padding-small: 0.5em;
 }
 * {
 	padding: 0;
@@ -71,6 +71,7 @@ a {
 	display: none;
 }
 .modal {
+	box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.5);
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
@@ -86,24 +87,28 @@ a {
 	height: fit-content;
 	background-color: white;
 	justify-content: space-between;
+	transition: left 0.3s ease-out;
 }
 .modal .modal-closebtn {
-	align-self: flex-end;
-	padding: var(--padding-small) var(--padding-medium);
+	width: fit-content;
+	position: absolute;
+	right: 0;
+	z-index: 3;
+	padding: var(--padding-small);
 	padding-bottom: 0;
 	color: var(--peach-color);
 	font-size: var(--font-medium);
 }
 .modal .modal-img {
 	padding: 0 var(--padding-small);
-	width: 40%;
-	height: auto;
+	width: 250px;
+	/* object-fit: cover; */
 }
 
 .modal .modal-info {
 	display: flex;
 	justify-content: center;
-	padding: var(--padding-medium);
+	padding: var(--padding-large) var(--padding-medium);
 }
 .modal .modal-info .modal-desc {
 	width: 60%;
