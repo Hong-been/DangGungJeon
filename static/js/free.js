@@ -3,6 +3,7 @@ $(document).ready(function () {
 });
 
 function showfree() {
+    $("#free").empty();
     $.ajax({
         type: "GET",
         url: "/free/list",
