@@ -139,9 +139,15 @@ function getModalInfo(targetName) {
 			const url = info["url"];
 
 			modalDate.innerText = date;
-			modalPlace.innerText = location;
+			if (location) {
+				modalPlace.innerText = location;
+				makeModalMap(location);
+			} else {
+				modalMap.style.display = "none";
+			}
 
 			modalUrl["target"] = "_blank";
+
 			if (page) {
 				modalUrl.innerText = "예매하러가기!";
 				modalUrl["href"] = page;
@@ -149,7 +155,6 @@ function getModalInfo(targetName) {
 				modalUrl.innerText = "웹사이트 구경가기!";
 				modalUrl["href"] = url;
 			}
-			makeModalMap(location);
 		},
 	});
 }
