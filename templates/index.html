@@ -4,6 +4,15 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta property="og:title" content="당신이 궁금한 모든 전시회, 당궁전" />
+		<meta
+			property="og:description"
+			content="전국 다양한 형태의 전시회 정보를 담아둔 플랫폼입니다."
+		/>
+		<meta
+			property="og:image"
+			content="{{ url_for('static', filename='ogimage.png') }}"
+		/>
 		<!-- Bootstrap CSS -->
 		<link
 			rel="stylesheet"
@@ -28,7 +37,6 @@
 		<script src="../../static/js/modal.js" defer></script>
 		<script src="../../static/js/slider.js" defer></script>
 		<script src="../../static/js/top10.js" defer></script>
-		<script src="../../static/js/search.js" defer></script>
 
 		<!--메인 article 랜덤 노출-->
 		<script type="text/javascript" src="/static/js/main-exhibition.js"></script>
