@@ -19,6 +19,7 @@
 * {
 	padding: 0;
 	margin: 0;
+	font-family: 'S-CoreDream-3Light';
 }
 a,
 button {
@@ -51,6 +52,7 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	padding-left: var(--padding-side);
+	font-family: 'MapoFlowerIsland'!important;
 }
 .main .main-exhibition .exhibition-desc .exhibition-name {
 	font-size: var(--font-large);
