@@ -43,6 +43,7 @@ a {
 .main_section .main_like {
 	font-size: var(--font-small);
 	font-weight: bold;
+	text-align: center;
 }
 .main_section button {
 	padding: var(--padding-medium);
@@ -50,16 +51,16 @@ a {
 	border-radius: 20px;
 	z-index: 1;
 	position: absolute;
-	top: 50%;
+	top: 65%;
 }
 .main_section button:hover {
 	border: medium solid var(--darkpeach-color);
 }
 .main_section button.main_ico_arrow-L {
-	left: 1em;
+	left: 15em;
 }
 .main_section button.main_ico_arrow-R {
-	right: 1em;
+	right: 15em;
 }
 .main_section .main_card_columns {
 	position: relative;
