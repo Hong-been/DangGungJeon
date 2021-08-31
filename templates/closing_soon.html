@@ -28,7 +28,10 @@
 		<script src="../../static/js/modal.js" defer></script>
 
 		<!--API-->
-		<script type="text/javascript" src="/static/js/listing_Closing_soon.js"></script>
+		<script
+			type="text/javascript"
+			src="/static/js/listing_Closing_soon.js"
+		></script>
 
 		<!-- 구글폰트 -->
 		<link
@@ -47,22 +50,24 @@
 
 	<body>
 		<!-- modal  홍빈홍빈-->
-		<article class="hidden modal">
-			<button class="modal-closebtn">X</button>
-			<div class="modal-info">
-				<img class="modal-img" src="/static/sample.png" />
-				<div class="modal-desc">
-					<span class="modal-desc-name">앨리스 달튼 브라운</span>
-					<span class="modal-desc-date">🗓 2021.7.22 ~ 2021.9.10</span>
-					<span class="modal-desc-place">🗺 마이아트뮤지엄</span>
-					<a class="modal-desc-url" href="">마이아트뮤지엄</a>
-					<div id="map">
-						<span class="modal-desc-adress"></span>
-						<span class="modal-desc-map"></span>
+		<div class="modal-background hidden">
+			<article class="hidden modal">
+				<button class="modal-closebtn">X</button>
+				<div class="modal-info">
+					<img class="modal-img" src="/static/sample.png" />
+					<div class="modal-desc">
+						<span class="modal-desc-name">앨리스 달튼 브라운</span>
+						<span class="modal-desc-date">🗓 2021.7.22 ~ 2021.9.10</span>
+						<span class="modal-desc-place">🗺 마이아트뮤지엄</span>
+						<a class="modal-desc-url" href="">마이아트뮤지엄</a>
+						<div id="map">
+							<span class="modal-desc-adress"></span>
+							<span class="modal-desc-map"></span>
+						</div>
 					</div>
 				</div>
-			</div>
-		</article>
+			</article>
+		</div>
 
 		<!-- header 하윤님-->
 		<div class="main_page_top">
@@ -114,8 +119,7 @@
 		<!-- main -->
 		<main class="category-main">
 			<div class="category-name">종료예정</div>
-			<ul class="exhibition-list" id="closing_soon">
-			</ul>
+			<ul class="exhibition-list" id="closing_soon"></ul>
 		</main>
 	</body>
 </html>

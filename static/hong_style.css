@@ -14,7 +14,7 @@
 	--padding-side: 3em;
 	--padding-large: 2em;
 	--padding-medium: 1.2em;
-	--padding-small: 0.5em;
+	--padding-small: 0.3em;
 }
 * {
 	padding: 0;
@@ -67,11 +67,21 @@ a {
 }
 
 /* modal */
-.modal.hidden {
+.modal-background {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: 1;
+}
+.modal.hidden,
+.modal-background.hidden {
 	display: none;
 }
 .modal {
-	box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.5);
+	box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.6);
 	z-index: 1;
 	display: flex;
 	flex-direction: column;
@@ -79,10 +89,7 @@ a {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	border-style: solid;
-	border-width: medium;
-	border-color: var(--brown-color);
-	border-radius: 30px;
+	border-radius: 5px;
 	width: 60%;
 	height: fit-content;
 	background-color: white;
@@ -94,7 +101,7 @@ a {
 	position: absolute;
 	right: 0;
 	z-index: 3;
-	padding: var(--padding-small);
+	padding: 3px 10px;
 	padding-bottom: 0;
 	color: var(--peach-color);
 	font-size: var(--font-medium);

@@ -19,11 +19,10 @@
 			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
 			crossorigin="anonymous"
 		></script>
-<!--<<<<<<< HEAD-->
+		<!--<<<<<<< HEAD-->
 
 		<!--API-->
 		<script type="text/javascript" src="/static/js/listing_Online.js"></script>
-
 
 		<!-- services 라이브러리 불러오기 -->
 		<script
@@ -48,22 +47,24 @@
 
 	<body>
 		<!-- modal  홍빈홍빈-->
-		<article class="hidden modal">
-			<button class="modal-closebtn">X</button>
-			<div class="modal-info">
-				<img class="modal-img" src="/static/sample.png" />
-				<div class="modal-desc">
-					<span class="modal-desc-name">앨리스 달튼 브라운</span>
-					<span class="modal-desc-date">🗓 2021.7.22 ~ 2021.9.10</span>
-					<span class="modal-desc-place">🗺 마이아트뮤지엄</span>
-					<a class="modal-desc-url" href="">마이아트뮤지엄</a>
-					<div id="map">
-						<span class="modal-desc-adress"></span>
-						<span class="modal-desc-map"></span>
+		<div class="modal-background hidden">
+			<article class="hidden modal">
+				<button class="modal-closebtn">X</button>
+				<div class="modal-info">
+					<img class="modal-img" src="/static/sample.png" />
+					<div class="modal-desc">
+						<span class="modal-desc-name">앨리스 달튼 브라운</span>
+						<span class="modal-desc-date">🗓 2021.7.22 ~ 2021.9.10</span>
+						<span class="modal-desc-place">🗺 마이아트뮤지엄</span>
+						<a class="modal-desc-url" href="">마이아트뮤지엄</a>
+						<div id="map">
+							<span class="modal-desc-adress"></span>
+							<span class="modal-desc-map"></span>
+						</div>
 					</div>
 				</div>
-			</div>
-		</article>
+			</article>
+		</div>
 
 		<!-- header 하윤님-->
 		<div class="main_page_top">
@@ -115,8 +116,7 @@
 		<!-- main -->
 		<main class="category-main">
 			<div class="category-name">온라인 전시</div>
-			<ul class="exhibition-list" id="online">
-			</ul>
+			<ul class="exhibition-list" id="online"></ul>
 		</main>
 	</body>
 </html>
