@@ -36,7 +36,7 @@ a {
 }
 .main_section {
 	height: calc(var(--img-height)+var(--padding-medium));
-	background-color: white;
+	background-color: transparent;
 	padding: var(--padding-large);
 	position: relative;
 }
