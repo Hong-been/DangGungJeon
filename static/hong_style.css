@@ -92,9 +92,7 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	padding-left: var(--padding-side);
-<<<<<<< HEAD
-	font-family: 'MapoFlowerIsland'!important;
-=======
+	font-family: "MapoFlowerIsland";
 	animation: fadein 1s;
 	-moz-animation: fadein 1s;
 	/* Firefox */
@@ -102,10 +100,10 @@ a {
 	/* Safari and Chrome */
 	-o-animation: fadein 1s;
 	/* Opera */
->>>>>>> 0c0925a7186ec8b8a6374b1a6b1ec3841feba826
 }
 .main .main-exhibition .exhibition-desc .exhibition-name {
 	font-size: var(--font-large);
+	font-weight: bold;
 	padding-bottom: var(--padding-medium);
 }
 .main .main-exhibition .exhibition-desc .exhibition-place,
