@@ -5,7 +5,6 @@
 * {
 	padding: 0;
 	margin: 0;
-/*	font-family: 'S-CoreDream-3Light';*/
 }
 li {
 	list-style: none;
@@ -13,8 +12,11 @@ li {
 body {
 	min-width: 700px;
 }
-main-exhibition {
-	font-family: 'MapoFlowerIsland';
+div:not(.exhibition-desc) {
+	font-family: 'S-CoreDream-3Light';
+}
+exhibition-desc {
+	font-family: 'Cafe24Ssurround';
 }
 
 @font-face {
