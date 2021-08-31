@@ -1,244 +1,253 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!-- Bootstrap CSS -->
-    <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-            crossorigin="anonymous"
-    />
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- Bootstrap CSS -->
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
 
-    <!-- JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"
-    ></script>
+		<!-- JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+			crossorigin="anonymous"
+		></script>
 
-    <!-- 구글폰트 -->
-    <link
-            href="https://fonts.googleapis.com/css?family=Stylish&display=swap"
-            rel="stylesheet"
-    />
+		<!-- 구글폰트 -->
+		<link
+			href="https://fonts.googleapis.com/css?family=Stylish&display=swap"
+			rel="stylesheet"
+		/>
 
-    <link rel="stylesheet" href="/static/style.css"/>
-    <link rel="stylesheet" href="/static/hayun-style.css"/>
-    <link rel="stylesheet" href="/static/hong_style.css"/>
-    <link rel="stylesheet" href="/static/HYOJOO_style.css"/>
-    <link rel="stylesheet" href="/static/About_Us(kmj).css"/>
+		<link rel="stylesheet" href="/static/style.css" />
+		<link rel="stylesheet" href="/static/hayun-style.css" />
+		<link rel="stylesheet" href="/static/hong_style.css" />
+		<link rel="stylesheet" href="/static/HYOJOO_style.css" />
+		<link rel="stylesheet" href="/static/About_Us(kmj).css" />
 
-    <title>About US</title>
-</head>
-<body>
-<!-- header 하윤님-->
-<div class="main_page_top">
-    <div>
-        <h1 class="logo">
-            <a href="/"
-            ><img src="/static/logo.png" width="60px" height="60px" alt="로고"
-            /></a>
-        </h1>
-    </div>
-    <div class="menu">
-        <nav class="menu-nav">
-            <ul class="menu-list" id="menu-list">
-                <li><a href="/">Home</a></li>
-                <!--""<-여기 부분에 URL 작성하면 됨-->
-                <li>
-                    <a href="#">Exhibition</a>
-                    <ul class="submenu">
-                        <li><a href="/top50">Top 50</a></li>
-                        <li><a href="/closing">종료예정</a></li>
-                        <li><a href="/free">무료전시</a></li>
-                        <li><a href="/online">온라인전시</a></li>
-                    </ul>
-                </li>
-                <li><a href="/about_us">About us</a></li>
-            </ul>
-            <span class="input-group search-box">
+		<title>About US</title>
+	</head>
+	<body>
+		<!-- header 하윤님-->
+		<div class="main_page_top">
+			<div>
+				<h1 class="logo">
+					<a href="/"
+						><img src="/static/logo.png" width="60px" height="60px" alt="로고"
+					/></a>
+				</h1>
+			</div>
+			<div class="menu">
+				<nav class="menu-nav">
+					<ul class="menu-list" id="menu-list">
+						<li><a href="/">Home</a></li>
+						<!--""<-여기 부분에 URL 작성하면 됨-->
+						<li>
+							<a href="#">Exhibition</a>
+							<ul class="submenu">
+								<li><a href="/top50">Top 50</a></li>
+								<li><a href="/closing">종료예정</a></li>
+								<li><a href="/free">무료전시</a></li>
+								<li><a href="/online">온라인전시</a></li>
+							</ul>
+						</li>
+						<li><a href="/about_us">About us</a></li>
+					</ul>
+					<form
+						class="input-group search-box"
+						action="/search_list"
+						method="GET"
+					>
 						<!-- 여기에 부트스트랩지우고 순수html로 input 써넣으시고요!!  -->
-						<input type="text" class="form-control"/>
-                <!--input type="text" class="form-control" placeholder="" aria-label="Recipient's username"
-            aria-describedby="basic-addon2" />
-        <!-- 여기에도 순수html로 버튼 써넣어주세요!! -->
-						<button class="search-btn" type="button">
+						<input
+							type="text"
+							class="form-control"
+							name="keyword"
+							placeholder="전시회, 지역을 검색해보세요!"
+						/>
+						<!--input type="text" class="form-control" placeholder="" aria-label="Recipient's username"
+							aria-describedby="basic-addon2" />
+						<!-- 여기에도 순수html로 버튼 써넣어주세요!! -->
+						<button class="search-btn" type="submit" value="submit">
 							<a href="#"
-                            ><img
-                                    src="/static/searching logo.png"
-                                    width="28px"
-                                    height="28px"
-                            /></a>
+								><img
+									src="/static/searching logo.png"
+									width="28px"
+									height="28px"
+							/></a>
 						</button>
-                <!--button class="btn btn-outline-secondary input-group-append" type="button">
-            <img src="/static/searching logo.png" width="28px" height="28px" />
-        </button-->
-					</span>
-        </nav>
-    </div>
-</div>
+						<!--button class="btn btn-outline-secondary input-group-append" type="button">
+							<img src="/static/searching logo.png" width="28px" height="28px" />
+						</button-->
+					</form>
+				</nav>
+			</div>
+		</div>
 
-<!--사이트 정보-->
-<div class="our_work">
-    <h1>Our Work</h1>
-    <div class="contents1">
-        <div class="logo"><img src="/static/about/bigger.png"/></div>
-        <div class="desc">
-            <h2>당궁전</h2>
-            <h5>: 당신이 궁금한 모든 전시회</h5>
-            <p>
-                확고한 브랜드파워를 갖춘 당궁전은 전시회 정보를 제공하는
-                <br/>국내 최고의 플랫폼입니다.
-                <br/>라이프 스타일에 최적화된 서비스를 제공하기 위한 기술 개발과
-                문화산업 리더의 역할을 수행하고 있습니다.
-            </p>
-        </div>
-    </div>
-</div>
+		<!--사이트 정보-->
+		<div class="our_work">
+			<h1>Our Work</h1>
+			<div class="contents1">
+				<div class="logo"><img src="/static/about/bigger.png" /></div>
+				<div class="desc">
+					<h2>당궁전</h2>
+					<h5>: 당신이 궁금한 모든 전시회</h5>
+					<p>
+						확고한 브랜드파워를 갖춘 당궁전은 전시회 정보를 제공하는
+						<br />국내 최고의 플랫폼입니다. <br />라이프 스타일에 최적화된
+						서비스를 제공하기 위한 기술 개발과 문화산업 리더의 역할을 수행하고
+						있습니다.
+					</p>
+				</div>
+			</div>
+		</div>
 
-<!--팀원 소개-->
-<div class="team">
-    <h1 class="title">Meet Team 코딩창조</h1>
-    <ul class="box">
-        <li>
-            <div class="box-body">
-                <img title="INFP" src="../static/about/ys.png"/>
-                <p class="name">김영산</p>
-                <p class="text1">
-                    청일점 김영산입니다! 코딩응애3을 맡고있고 도움을 많이받았어요ㅜ
-                    여행을 다니기 좋아하고 인형뽑기같은 모험을 좋아하지만
-                    현실은 모험하지않는 이상한 사람입니다 ㅎ
-                </p>
-                <button
-                        class="url"
-                        onclick="window.open('https://ezkoding.tistory.com')"
-                >
-                    개발일지
-                </button>
-            </div>
-        </li>
-        <li>
-            <div class="box-body">
-                <img title="ENFJ" src="../static/about/hj.png"/>
-                <p class="name">유효주</p>
-                <p class="text1">
-                    유효주 입니다~ 13조에서 팀장을 맡았지만 코딩응애라 팀원분들이 많이
-                    도와주셨어요! 분위기 좋은 팀에서 작업해 행복하네요, 감사해요!
-                    <br/>근데 ENFJ 캐릭터 너무 팀장같이 생겼네요^^
-                </p>
-                <button
-                        class="url"
-                        onclick="window.open('https://pbling.tistory.com/')"
-                >
-                    개발일지
-                </button>
-            </div>
-        </li>
-        <li>
-            <div class="box-body">
-                <img title="ISFP" src="../static/about/hy_mj.png"/>
-                <p class="name">문하윤</p>
-                <p class="text1">
-                    제 이름은 '문하윤'입니다 ! 여러 가지로 부족한 점이 많았지만 여러
-                    방면으로 팀원들의 도움을 받은 코딩응애2 입니다 ! 짧지만 강렬했던
-                    만남이었습니다. 우리 팀원들 최고 !!
-                </p>
-                <button
-                        class="url"
-                        onclick="window.open('https://velog.io/@mhy9502')"
-                >
-                    개발일지
-                </button>
-            </div>
-        </li>
-    </ul>
-    <ul class="box">
-        <li>
-            <div class="box-body">
-                <img title="INTJ" src="/static/about/hb.png"/>
-                <p class="name">이홍빈</p>
-                <p class="text2">
-                    프론트엔드 개발자를 준비하는 용의주도 전략가 이홍빈입니다^-^
-                    소통이 잘 되는 팀워크 최상인 팀원들과프로젝트를 진행하게 되어
-                    영광입니다. 전시회 플랫폼이라는 아이디어가 채택되어 신나게 작업할
-                    수 있었습니다! 우리 팀원들 모두모두 잘되었으면 좋겠습니다!
-                </p>
-                <button
-                        class="url"
-                        onclick="window.open('https://sulfuric-lunge-ed9.notion.site/15-577bc72da1dc40d7a690cfa19a57c17f')"
-                >
-                    개발일지
-                </button>
-            </div>
-        </li>
-        <li>
-            <div class="box-body">
-                <img title="ISFP" src="/static/about/hy_mj.png"/>
-                <p class="name">김민정</p>
-                <p class="text2">
-                    안녕하세요 저는 호기심 많은 예술가입니다!
-                    <br/>코딩은 아주 처음이라 모든 게 낯설었지만
-                    <br/>팀원들 덕분에 즐거운 작업이었습니다:)
-                    <br/>저희가 만든 웹사이트 봐주셔서 감사합니다.
-                </p>
-                <button
-                        class="url"
-                        onclick="window.open('https://velog.io/@minnjeong_kim')"
-                >
-                    개발일지
-                </button>
-            </div>
-        </li>
-        <li class="space">
-            <img src="/static/about/logo.png"/>
-        </li>
-    </ul>
-</div>
+		<!--팀원 소개-->
+		<div class="team">
+			<h1 class="title">Meet Team 코딩창조</h1>
+			<ul class="box">
+				<li>
+					<div class="box-body">
+						<img title="INFP" src="../static/about/ys.png" />
+						<p class="name">김영산</p>
+						<p class="text1">
+							청일점 김영산입니다! 코딩응애3을 맡고있고 도움을 많이받았어요ㅜ
+							여행을 다니기 좋아하고 인형뽑기같은 모험을 좋아하지만 현실은
+							모험하지않는 이상한 사람입니다 ㅎ
+						</p>
+						<button
+							class="url"
+							onclick="window.open('https://ezkoding.tistory.com')"
+						>
+							개발일지
+						</button>
+					</div>
+				</li>
+				<li>
+					<div class="box-body">
+						<img title="ENFJ" src="../static/about/hj.png" />
+						<p class="name">유효주</p>
+						<p class="text1">
+							유효주 입니다~ 13조에서 팀장을 맡았지만 코딩응애라 팀원분들이 많이
+							도와주셨어요! 분위기 좋은 팀에서 작업해 행복하네요, 감사해요!
+							<br />근데 ENFJ 캐릭터 너무 팀장같이 생겼네요^^
+						</p>
+						<button
+							class="url"
+							onclick="window.open('https://pbling.tistory.com/')"
+						>
+							개발일지
+						</button>
+					</div>
+				</li>
+				<li>
+					<div class="box-body">
+						<img title="ISFP" src="../static/about/hy_mj.png" />
+						<p class="name">문하윤</p>
+						<p class="text1">
+							제 이름은 '문하윤'입니다 ! 여러 가지로 부족한 점이 많았지만 여러
+							방면으로 팀원들의 도움을 받은 코딩응애2 입니다 ! 짧지만 강렬했던
+							만남이었습니다. 우리 팀원들 최고 !!
+						</p>
+						<button
+							class="url"
+							onclick="window.open('https://velog.io/@mhy9502')"
+						>
+							개발일지
+						</button>
+					</div>
+				</li>
+			</ul>
+			<ul class="box">
+				<li>
+					<div class="box-body">
+						<img title="INTJ" src="/static/about/hb.png" />
+						<p class="name">이홍빈</p>
+						<p class="text2">
+							프론트엔드 개발자를 준비하는 용의주도 전략가 이홍빈입니다^-^
+							소통이 잘 되는 팀워크 최상인 팀원들과프로젝트를 진행하게 되어
+							영광입니다. 전시회 플랫폼이라는 아이디어가 채택되어 신나게 작업할
+							수 있었습니다! 우리 팀원들 모두모두 잘되었으면 좋겠습니다!
+						</p>
+						<button
+							class="url"
+							onclick="window.open('https://sulfuric-lunge-ed9.notion.site/15-577bc72da1dc40d7a690cfa19a57c17f')"
+						>
+							개발일지
+						</button>
+					</div>
+				</li>
+				<li>
+					<div class="box-body">
+						<img title="ISFP" src="/static/about/hy_mj.png" />
+						<p class="name">김민정</p>
+						<p class="text2">
+							안녕하세요 저는 호기심 많은 예술가입니다!
+							<br />코딩은 아주 처음이라 모든 게 낯설었지만 <br />팀원들 덕분에
+							즐거운 작업이었습니다:) <br />저희가 만든 웹사이트 봐주셔서
+							감사합니다.
+						</p>
+						<button
+							class="url"
+							onclick="window.open('https://velog.io/@minnjeong_kim')"
+						>
+							개발일지
+						</button>
+					</div>
+				</li>
+				<li class="space">
+					<img src="/static/about/logo.png" />
+				</li>
+			</ul>
+		</div>
 
-<!--도움을 주신 분들 설명-->
-<div class="help">
-    <h1 class="title">Thanks to</h1>
-    <div class="contents3">
-        <div class="group">
-            <li>
-                <div class="body">
-                    <img class="box-img-top-2" src="../static/about/bk.png"/>
-                    <p class="name"><span class="position">Tutor</span>이범규</p>
-                </div>
-            </li>
-            <li>
-                <div class="body">
-                    <img class="box-img-top-2" src="/static/about/sj.png"/>
-                    <p class="name"><span class="position">Mini Tutor</span>정석진</p>
-                </div>
-            </li>
-            <li>
-                <div class="body">
-                    <img class="box-img-top-2" src="/static/about/hy.png"/>
-                    <p class="name"><span class="position">Manager</span>송현영</p>
-                </div>
-            </li>
-            <li>
-                <div class="body">
-                    <img class="box-img-top-2" src="/static/about/yr.png"/>
-                    <p class="name"><span class="position">Manager</span>왕예리</p>
-                </div>
-            </li>
-            <li>
-                <div class="body">
-                    <img class="box-img-top-2" src="/static/about/sa.png"/>
-                    <p class="name"><span class="position">Manager</span>황선애</p>
-                </div>
-            </li>
-        </div>
-        <img class="logo" src="/static/about/sparta.png"/>
-    </div>
-</div>
+		<!--도움을 주신 분들 설명-->
+		<div class="help">
+			<h1 class="title">Thanks to</h1>
+			<div class="contents3">
+				<div class="group">
+					<li>
+						<div class="body">
+							<img class="box-img-top-2" src="../static/about/bk.png" />
+							<p class="name"><span class="position">Tutor</span>이범규</p>
+						</div>
+					</li>
+					<li>
+						<div class="body">
+							<img class="box-img-top-2" src="/static/about/sj.png" />
+							<p class="name"><span class="position">Mini Tutor</span>정석진</p>
+						</div>
+					</li>
+					<li>
+						<div class="body">
+							<img class="box-img-top-2" src="/static/about/hy.png" />
+							<p class="name"><span class="position">Manager</span>송현영</p>
+						</div>
+					</li>
+					<li>
+						<div class="body">
+							<img class="box-img-top-2" src="/static/about/yr.png" />
+							<p class="name"><span class="position">Manager</span>왕예리</p>
+						</div>
+					</li>
+					<li>
+						<div class="body">
+							<img class="box-img-top-2" src="/static/about/sa.png" />
+							<p class="name"><span class="position">Manager</span>황선애</p>
+						</div>
+					</li>
+				</div>
+				<img class="logo" src="/static/about/sparta.png" />
+			</div>
+		</div>
 
-<footer></footer>
-</body>
+		<footer></footer>
+	</body>
 </html>

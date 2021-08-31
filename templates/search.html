@@ -19,6 +19,7 @@
 			integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
 			crossorigin="anonymous"
 		></script>
+		<script type="text/javascript" src="/static/js/free.js"></script>
 
 		<!-- services 라이브러리 불러오기 -->
 		<script
@@ -26,12 +27,6 @@
 			src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ffacdce28386dbbb00abe6c880980966&libraries=services"
 		></script>
 		<script src="../../static/js/modal.js" defer></script>
-
-		<!--API-->
-		<script
-			type="text/javascript"
-			src="/static/js/listing_Closing_soon.js"
-		></script>
 
 		<!-- 구글폰트 -->
 		<link
@@ -44,7 +39,6 @@
 		<link rel="stylesheet" href="/static/hong_style.css" />
 		<link rel="stylesheet" href="/static/HYOJOO_style.css" />
 		<link rel="stylesheet" href="/static/category_style.css" />
-		<link rel="stylesheet" href="/static/dday.css" />
 		<title>당궁전, 당신이 궁금한 모든 전시회</title>
 	</head>
 
@@ -124,11 +118,17 @@
 				</nav>
 			</div>
 		</div>
-
 		<!-- main -->
 		<main class="category-main">
-			<div class="category-name">종료예정</div>
-			<ul class="exhibition-list" id="closing_soon"></ul>
+			<div class="category-name">"{{key}}" 검색 결과</div>
+			<ul class="exhibition-list">
+				{% for i in search_list %}
+				<li class="exhibition">
+					<a><img class="exhibition-img" src="{{i['image']}}" /></a>
+					<span class="exhibition-name">{{i['title']}}</span>
+				</li>
+				{% endfor %}
+			</ul>
 		</main>
 	</body>
 </html>

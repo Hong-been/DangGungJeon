@@ -66,6 +66,44 @@ def listingfree():
 def online():
     return render_template('online.html')
 
+@app.route('/search_list',methods=['GET'])
+def search_list():
+    key=request.args.get("keyword")
+    print(key)
+
+    search_list = []
+    search_list.extend(list(db.top50.find({
+            "$or": [
+            {'title': {'$regex' :key}},
+            {'location': {'$regex':key}}]
+            },
+            {'_id':False})))
+    search_list.extend(list(db.online.find({
+            "$or": [
+            {'title': {'$regex' :key}},
+            {'location': {'$regex':key}}
+            ]
+            },
+            {'_id':False})))
+    search_list.extend(list(db.free.find({
+            "$or": [
+            {'title': {'$regex' :key}},
+            {'location': {'$regex':key}}
+            ]
+            },
+            {'_id':False})))
+    search_list.extend(list(db.closing_soon.find({
+            "$or": [
+            {'title': {'$regex' :key}},
+            {'location': {'$regex':key}}
+            ]
+            },
+            {'_id':False})))
+
+    # jsonify({'search_list': search_list})
+    
+    return render_template("search.html",key=key,search_list=search_list)
+
 
 @app.route('/online/list', methods=['GET'])
 def listingOnline():
