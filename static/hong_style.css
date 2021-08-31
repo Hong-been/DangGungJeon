@@ -103,7 +103,8 @@ a {
 	height: fit-content;
 	background-color: white;
 	justify-content: space-between;
-	transition: left 0.3s ease-out;
+	transition-property: transform;
+	transition-duration: 3s;
 }
 .modal .modal-closebtn {
 	width: fit-content;
