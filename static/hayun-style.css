@@ -63,7 +63,7 @@
 }
 
 .form-control {
-	background-color: #fddecc;
+	background-color: transparent;
 	border-top: none;
 	border-left: none;
 	border-right: none;
@@ -72,7 +72,7 @@
 }
 
 .search-btn {
-	background-color: #fddecc;
+	background-color: transparent;
 	border: none;
 }
 .search-btn img {

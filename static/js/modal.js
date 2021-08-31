@@ -95,6 +95,8 @@ function openModalCate(event) {
 
 	modal.classList.remove("hidden");
 	modalBack.classList.remove("hidden");
+	modal.classList.add("popup");
+	modalBack.classList.add("popup");
 }
 function openModalIndex(event) {
 	event.preventDefault();
@@ -109,6 +111,8 @@ function openModalIndex(event) {
 
 	modal.classList.remove("hidden");
 	modalBack.classList.remove("hidden");
+	modal.classList.add("popup");
+	modalBack.classList.add("popup");
 }
 function openModalRep(event) {
 	event.preventDefault();
@@ -123,6 +127,8 @@ function openModalRep(event) {
 
 	modal.classList.remove("hidden");
 	modalBack.classList.remove("hidden");
+	modal.classList.add("popup");
+	modalBack.classList.add("popup");
 }
 function getModalInfo(targetName) {
 	//title / date / location / map / image
@@ -166,4 +172,6 @@ function getModalInfo(targetName) {
 modalCloseBtn.addEventListener("click", () => {
 	modal.classList.add("hidden");
 	modalBack.classList.add("hidden");
+	modal.classList.remove("popup");
+	modalBack.classList.remove("popup");
 });

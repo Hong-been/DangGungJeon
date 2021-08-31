@@ -33,9 +33,9 @@ a {
 
 /* main */
 .main {
-	background-color: var(--peach-color);
 }
 .main .main-exhibition {
+	background-color: var(--peach-color);
 	height: 50vh;
 	display: flex;
 	justify-content: space-between;
@@ -69,21 +69,30 @@ a {
 /* modal */
 .modal-background {
 	position: fixed;
+	display: block;
 	top: 0;
 	left: 0;
 	bottom: 0;
 	right: 0;
-	background: rgba(0, 0, 0, 0.5);
-	z-index: 1;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 2;
 }
 .modal.hidden,
 .modal-background.hidden {
-	display: none;
+	z-index: -1;
+	opacity: 0;
+
+	transition: all 0.3s;
+}
+.modal.popup {
+	opacity: 1;
+	transition: all 0.5s;
+	z-index: 2;
 }
 .modal {
 	box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.6);
-	z-index: 1;
-	display: flex;
+
+	display: inline-block;
 	flex-direction: column;
 	position: fixed;
 	top: 50%;
@@ -108,7 +117,8 @@ a {
 }
 .modal .modal-img {
 	padding: 0 var(--padding-small);
-	width: 250px;
+	width: 240px;
+	height: auto;
 	/* object-fit: cover; */
 }
 
