@@ -51,16 +51,16 @@ a {
 	border-radius: 20px;
 	z-index: 1;
 	position: absolute;
-	top: 65%;
+	top: 50%;
 }
 .main_section button:hover {
 	border: medium solid var(--darkpeach-color);
 }
 .main_section button.main_ico_arrow-L {
-	left: 15em;
+	left: 1em;
 }
 .main_section button.main_ico_arrow-R {
-	right: 15em;
+	right: 1em;
 }
 .main_section .main_card_columns {
 	position: relative;
