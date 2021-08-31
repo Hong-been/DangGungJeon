@@ -32,7 +32,48 @@ a {
 }
 
 /* main */
-.main {
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadein {
+	/* Firefox */
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadein {
+	/* Safari and Chrome */
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes fadein {
+	/* Opera */
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
 }
 .main .main-exhibition {
 	background-color: var(--peach-color);
@@ -51,6 +92,13 @@ a {
 	flex-direction: column;
 	justify-content: center;
 	padding-left: var(--padding-side);
+	animation: fadein 1s;
+	-moz-animation: fadein 1s;
+	/* Firefox */
+	-webkit-animation: fadein 1s;
+	/* Safari and Chrome */
+	-o-animation: fadein 1s;
+	/* Opera */
 }
 .main .main-exhibition .exhibition-desc .exhibition-name {
 	font-size: var(--font-large);
@@ -62,8 +110,13 @@ a {
 }
 .main .main-exhibition .exhibition-img {
 	margin-right: var(--padding-side);
-	/* width: var(--img-width); */
-	/* height: 90%; */
+	animation: fadein 1s;
+	-moz-animation: fadein 1s;
+	/* Firefox */
+	-webkit-animation: fadein 1s;
+	/* Safari and Chrome */
+	-o-animation: fadein 1s;
+	/* Opera */
 }
 
 /* modal */
