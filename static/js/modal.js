@@ -11,6 +11,14 @@ const modalBack = document.querySelector(".modal-background"),
 
 let indexImages, cateImages, repEXhbn;
 
+modalCloseBtn.addEventListener("click", () => {
+	modal.classList.add("hidden");
+	modalBack.classList.add("hidden");
+
+	modal.classList.remove("popup");
+	modalBack.classList.remove("popup");
+});
+
 window.setTimeout(() => {
 	(indexImages = document.querySelectorAll(".main_card_img")),
 		(cateImages = document.querySelectorAll(".category-main .exhibition-img")),
@@ -167,10 +175,3 @@ function getModalInfo(targetName) {
 		},
 	});
 }
-
-modalCloseBtn.addEventListener("click", () => {
-	modal.classList.add("hidden");
-	modalBack.classList.add("hidden");
-	modal.classList.remove("popup");
-	modalBack.classList.remove("popup");
-});
