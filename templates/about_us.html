@@ -29,11 +29,11 @@
 			rel="shortcut icon"
 			href="{{ url_for('static', filename='favicon.ico') }}"
 		/>
-		<link rel="stylesheet" href="/static/style.css" />
-		<link rel="stylesheet" href="/static/hayun-style.css" />
-		<link rel="stylesheet" href="/static/hong_style.css" />
-		<link rel="stylesheet" href="/static/HYOJOO_style.css" />
-		<link rel="stylesheet" href="/static/About_Us(kmj).css" />
+		<link rel="stylesheet" href="/static/css/style.css" />
+		<link rel="stylesheet" href="/static/css/about_us.css" />
+		<link rel="stylesheet" href="/static/css/header.css" />
+		<link rel="stylesheet" href="/static/css/main.css" />
+		<link rel="stylesheet" href="/static/css/category.css" />
 
 		<title>About US</title>
 	</head>
@@ -51,7 +51,6 @@
 				<nav class="menu-nav">
 					<ul class="menu-list" id="menu-list">
 						<li><a href="/">Home</a></li>
-						<!--""<-여기 부분에 URL 작성하면 됨-->
 						<li>
 							<a href="#">Exhibition</a>
 							<ul class="submenu">
@@ -68,7 +67,6 @@
 						action="/search_list"
 						method="GET"
 					>
-						<!-- 여기에 부트스트랩지우고 순수html로 input 써넣으시고요!!  -->
 						<input
 							type="text"
 							class="form-control"
@@ -76,20 +74,15 @@
 							placeholder="전시회, 지역을 검색해보세요!"
 							autocomplete="off"
 						/>
-						<!--input type="text" class="form-control" placeholder="" aria-label="Recipient's username"
-							aria-describedby="basic-addon2" />
-						<!-- 여기에도 순수html로 버튼 써넣어주세요!! -->
-						<button class="search-btn" type="submit" value="submit">
-							<a href="#"
-								><img
-									src="/static/searching logo.png"
-									width="28px"
-									height="28px"
-							/></a>
+						<button
+							class="search-btn"
+							type="submit"
+							value="submit"
+							width="28px"
+							height="28px"
+						>
+							🔍
 						</button>
-						<!--button class="btn btn-outline-secondary input-group-append" type="button">
-							<img src="/static/searching logo.png" width="28px" height="28px" />
-						</button-->
 					</form>
 				</nav>
 			</div>
@@ -104,9 +97,9 @@
 					<h2>당궁전</h2>
 					<h5>: 당신이 궁금한 모든 전시회</h5>
 					<p>
-						확고한 브랜드파워를 갖춘 당궁전은 전시회 정보를 제공하는
-						<br />국내 최고의 플랫폼입니다. <br />라이프 스타일에 최적화된
-						서비스를 제공하기 위한 기술 개발과 문화산업 리더의 역할을 수행하고
+						전시회를 한 눈에 볼 수 있는 플랫폼, 당궁전입니다.
+						<br />전시회를 사랑하고 즐기는 모든 이들을 위해, <br />
+						인기 전시회를 비롯한 다채로운 컨셉의 전시회를 보고 검색할 수
 						있습니다.
 					</p>
 				</div>
@@ -119,7 +112,7 @@
 			<ul class="box">
 				<li>
 					<div class="box-body">
-						<img title="INFP" src="../static/about/ys.png" />
+						<img title="INFP" src="../static/about/infp.png" />
 						<p class="name">김영산</p>
 						<p class="text1">
 							청일점 김영산입니다! 코딩응애3을 맡고있고 도움을 많이받았어요ㅜ
@@ -136,7 +129,7 @@
 				</li>
 				<li>
 					<div class="box-body">
-						<img title="ENFJ" src="../static/about/hj.png" />
+						<img title="ENFJ" src="../static/about/enfj.png" />
 						<p class="name">유효주</p>
 						<p class="text1">
 							유효주 입니다~ 13조에서 팀장을 맡았지만 코딩응애라 팀원분들이 많이
@@ -153,7 +146,7 @@
 				</li>
 				<li>
 					<div class="box-body">
-						<img title="ISFP" src="../static/about/hy_mj.png" />
+						<img title="ISFP" src="../static/about/isfp.png" />
 						<p class="name">문하윤</p>
 						<p class="text1">
 							제 이름은 '문하윤'입니다 ! 여러 가지로 부족한 점이 많았지만 여러
@@ -172,7 +165,7 @@
 			<ul class="box">
 				<li>
 					<div class="box-body">
-						<img title="INTJ" src="/static/about/hb.png" />
+						<img title="INTJ" src="/static/about/intj.png" />
 						<p class="name">이홍빈</p>
 						<p class="text2">
 							프론트엔드 개발자를 준비하는 용의주도 전략가 이홍빈입니다^-^
@@ -190,7 +183,7 @@
 				</li>
 				<li>
 					<div class="box-body">
-						<img title="ISFP" src="/static/about/hy_mj.png" />
+						<img title="ISFP" src="/static/about/isfp.png" />
 						<p class="name">김민정</p>
 						<p class="text2">
 							안녕하세요 저는 호기심 많은 예술가입니다!
@@ -207,7 +200,7 @@
 					</div>
 				</li>
 				<li class="space">
-					<img src="/static/about/logo.png" />
+					<img src="/static/logo.png" />
 				</li>
 			</ul>
 		</div>
@@ -219,31 +212,31 @@
 				<div class="group">
 					<li>
 						<div class="body">
-							<img class="box-img-top-2" src="../static/about/bk.png" />
+							<img class="box-img-top-2" src="../static/about/beomgyu.png" />
 							<p class="name"><span class="position">Tutor</span>이범규</p>
 						</div>
 					</li>
 					<li>
 						<div class="body">
-							<img class="box-img-top-2" src="/static/about/sj.png" />
+							<img class="box-img-top-2" src="/static/about/seokjin.png" />
 							<p class="name"><span class="position">Mini Tutor</span>정석진</p>
 						</div>
 					</li>
 					<li>
 						<div class="body">
-							<img class="box-img-top-2" src="/static/about/hy.png" />
+							<img class="box-img-top-2" src="/static/about/hyunyoung.png" />
 							<p class="name"><span class="position">Manager</span>송현영</p>
 						</div>
 					</li>
 					<li>
 						<div class="body">
-							<img class="box-img-top-2" src="/static/about/yr.png" />
+							<img class="box-img-top-2" src="/static/about/yeri.png" />
 							<p class="name"><span class="position">Manager</span>왕예리</p>
 						</div>
 					</li>
 					<li>
 						<div class="body">
-							<img class="box-img-top-2" src="/static/about/sa.png" />
+							<img class="box-img-top-2" src="/static/about/sunae.png" />
 							<p class="name"><span class="position">Manager</span>황선애</p>
 						</div>
 					</li>

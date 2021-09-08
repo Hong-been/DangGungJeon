@@ -1,0 +1,88 @@
+:root {
+	--darkpeach-color: #f9cdad;
+}
+.main_page_top {
+	background-color: #fddecc;
+	padding-bottom: 30px;
+	background-size: cover;
+	background-position: center;
+}
+
+.menu-nav {
+	display: flex;
+	justify-content: space-between;
+}
+/*menu 하위 nav 에 클래스 입력*/
+.main_page_top .logo {
+	margin: 0px 20px 10px 30px;
+	float: left;
+	padding-top: 20px;
+}
+
+.menu-list {
+	/* width: 500px; */
+	height: fit-content;
+	background-color: #fddecc;
+	list-style: none;
+	padding-top: 30px;
+}
+
+.menu-list ul {
+	display: none;
+	position: absolute;
+	width: 480px;
+	background-color: #fddecc;
+}
+
+.menu-list li {
+	float: left;
+	margin: 0 20px;
+}
+
+.menu-list li a {
+	font-size: 20px;
+	color: black;
+	font-weight: normal;
+	text-decoration: none;
+	padding-bottom: 5px;
+}
+#menu-list li ul {
+	background-color: var(--darkpeach-color);
+	width: fit-content;
+	padding: 5px 10px;
+	border-radius: 10px;
+}
+#menu-list li:hover ul {
+	display: block;
+}
+
+.menu-list .submenu li a {
+	font-size: 15px;
+	color: black;
+	padding-top: 0;
+}
+
+.form-control {
+	background-color: transparent;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid black;
+	border-radius: 0;
+}
+
+.search-btn {
+	background-color: transparent;
+	border: none;
+}
+.search-btn img {
+	width: 16px;
+	height: 16px;
+}
+
+.search-box {
+	width: 280px;
+	height: 40px;
+	padding-top: 20px;
+	padding-right: 15px;
+}

@@ -42,11 +42,11 @@
 			rel="shortcut icon"
 			href="{{ url_for('static', filename='favicon.ico') }}"
 		/>
-		<link rel="stylesheet" href="/static/style.css" />
-		<link rel="stylesheet" href="/static/hayun-style.css" />
-		<link rel="stylesheet" href="/static/hong_style.css" />
-		<link rel="stylesheet" href="/static/HYOJOO_style.css" />
-		<link rel="stylesheet" href="/static/category_style.css" />
+		<link rel="stylesheet" href="/static/css/style.css" />
+		<link rel="stylesheet" href="/static/css/category.css" />
+		<link rel="stylesheet" href="/static/css/header.css" />
+		<link rel="stylesheet" href="/static/css/main.css" />
+		<link rel="stylesheet" href="/static/css/modal.css" />
 		<title>당궁전, 당신이 궁금한 모든 전시회</title>
 	</head>
 
@@ -101,7 +101,6 @@
 						action="/search_list"
 						method="GET"
 					>
-						<!-- 여기에 부트스트랩지우고 순수html로 input 써넣으시고요!!  -->
 						<input
 							type="text"
 							class="form-control"
@@ -109,20 +108,15 @@
 							placeholder="전시회, 지역을 검색해보세요!"
 							autocomplete="off"
 						/>
-						<!--input type="text" class="form-control" placeholder="" aria-label="Recipient's username"
-							aria-describedby="basic-addon2" />
-						<!-- 여기에도 순수html로 버튼 써넣어주세요!! -->
-						<button class="search-btn" type="submit" value="submit">
-							<a href="#"
-								><img
-									src="/static/searching logo.png"
-									width="28px"
-									height="28px"
-							/></a>
+						<button
+							class="search-btn"
+							type="submit"
+							value="submit"
+							width="28px"
+							height="28px"
+						>
+							🔍
 						</button>
-						<!--button class="btn btn-outline-secondary input-group-append" type="button">
-							<img src="/static/searching logo.png" width="28px" height="28px" />
-						</button-->
 					</form>
 				</nav>
 			</div>

@@ -1,0 +1,257 @@
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadein {
+	/* Firefox */
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadein {
+	/* Safari and Chrome */
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes fadein {
+	/* Opera */
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+/*header*/
+header {
+	background-color: #fddecc;
+	height: 80px;
+}
+/*사이트 정보 파트*/
+.our_work {
+	margin-top: 100px;
+	width: 100%;
+	height: 500px;
+
+	animation: fadein 0.5s;
+	-moz-animation: fadein 0.5s;
+	/* Firefox */
+	-webkit-animation: fadein 0.5s;
+	/* Safari and Chrome */
+	-o-animation: fadein 0.5s;
+}
+
+.our_work > h1 {
+	text-align: center;
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.our_work .contents1 {
+	width: 800px;
+	display: flex;
+	margin: 60px auto 0 auto;
+}
+
+.our_work .contents1 .logo > img {
+	float: left;
+	width: 300px;
+	height: 300px;
+	margin-left: 50px;
+}
+
+.our_work .contents1 .desc {
+	float: left;
+	width: 420px;
+	height: 200px;
+	margin-top: 50px;
+	margin-left: 50px;
+}
+
+.our_work .contents1 .desc > h5 {
+	margin-bottom: 30px;
+}
+
+.our_work .contents1 .desc > p {
+	margin-right: 20px;
+	font-size: 14px;
+}
+
+/*팀원설명 파트*/
+.team .title {
+	margin-bottom: 100px;
+	text-align: center;
+	font-size: 36px;
+	font-weight: bold;
+}
+
+/*팀원 박스 들어갈 부분*/
+.team .box {
+	display: flex;
+	width: 840px;
+	height: 380px;
+	margin: auto;
+}
+
+.team .box > li {
+	flex: 1;
+	height: 360px;
+	list-style: none;
+	padding-left: 0px;
+}
+
+.team .box > li:not(:last-child) {
+	margin-right: 20px;
+}
+
+
+/* 팀원 개별 박스*/
+.team .box .space {
+	margin: auto;
+	display: block;
+}
+
+.team .box .space > img {
+	width: 60px;
+	height: 60px;
+	margin: 120px auto 0 auto;
+	display: block;
+}
+
+.team .box .box-body {
+	text-align: center;
+	margin: auto;
+	/*background-color: yellowgreen;*/
+}
+
+.team .box .box-body > img {
+	width: 160px;
+	height: 150px;
+	margin: 0 auto 10px auto;
+	display: block;
+}
+
+.team .box .box-body .name {
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	margin: auto;
+}
+
+.team .box .box-body .text1 {
+	width: 250px;
+	height: 70px;
+	font-size: 12px;
+	margin: 5px auto 10px auto;
+}
+
+.team .box .box-body .text2 {
+	width: 250px;
+	height: 100px;
+	font-size: 12px;
+	margin: 5px auto 10px auto;
+}
+
+.team .box .box-body > button {
+	background-color: white;
+	color: #d8384d;
+	border: 1.6px solid #d8384d;
+	width: 85px;
+	height: 40px;
+	font-size: 14px;
+	margin: auto;
+	text-align: center;
+	border-radius: 5px;
+	transition-duration: 0.4s;
+}
+
+.team .box .box-body > button:hover {
+	background-color: #d8384d;
+	color: white;
+}
+
+/*땡스투*/
+.help > h1 {
+	text-align: center;
+	font-size: 36px;
+	font-weight: bold;
+	margin-top: 180px;
+}
+
+.help .contents3 {
+	width: 900px;
+	height: 240px;
+	margin: 50px auto 200px auto;
+}
+
+.help .contents3 .group {
+	display: flex;
+	width: 900px;
+	height: 240px;
+	margin: auto;
+}
+
+.help .contents3 .group > li {
+	flex: 1;
+	height: 180px;
+	margin-top: 30px;
+	margin-right: 10px;
+}
+
+.help .contents3 .group > li:not(:last-child) {
+	margin-right: 16px;
+}
+
+.help .contents3 .group .body .box-img-top-2 {
+	width: 100px;
+	height: 120px;
+	margin: 10px auto 0 auto;
+	display: block;
+}
+
+.help .contents3 .group .body .name {
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.help .contents3 .group .body .position {
+	font-style: italic;
+	font-size: 14px;
+	font-weight: bold;
+	display: block;
+	margin: auto;
+	color: #d8384d;
+}
+
+.help .contents3 > img {
+	display: block;
+	margin: 60px auto 0 auto;
+	width: 180px;
+	height: 90px;
+}
+
+/*footer*/
+footer {
+	height: 120px;
+}

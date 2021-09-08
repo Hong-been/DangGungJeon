@@ -28,7 +28,6 @@ window.setTimeout(() => {
 }, 500);
 
 function makeModalMap(location) {
-	console.log("지도를 가져올 키워드: ", location);
 	let roadAdress;
 
 	var services = kakao.maps.services;
@@ -142,7 +141,7 @@ function getModalInfo(targetName) {
 		data: {},
 		success: function (response) {
 			let info = response["modal_info"];
-			console.log(info);
+
 			const date = info["date"];
 			const location = info["location"];
 			const page = info["page"];

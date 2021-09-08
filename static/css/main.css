@@ -1,0 +1,122 @@
+:root {
+	/* color */
+	--peach-color: hsl(23, 93%, 89%);
+	--brown-color: #75543d;
+	--darkpeach-color: #f9cdad;
+
+	/* font */
+	--font-large: 2em;
+	--font-medium: 1.5em;
+	--font-small: 1.3em;
+	--font-micro: 0.8em;
+
+	/* padding */
+	--padding-side: 3em;
+	--padding-large: 2em;
+	--padding-medium: 1.2em;
+	--padding-small: 0.3em;
+}
+* {
+	padding: 0;
+	margin: 0;
+}
+a,
+button {
+	border: none;
+	cursor: pointer;
+	outline: none;
+	background-color: transparent;
+}
+a {
+	text-decoration: none;
+}
+
+/* main */
+
+@keyframes fadein {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes fadein {
+	/* Firefox */
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes fadein {
+	/* Safari and Chrome */
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@-o-keyframes fadein {
+	/* Opera */
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+.main .main-exhibition {
+	background-color: var(--peach-color);
+	height: 50vh;
+	display: flex;
+	justify-content: space-between;
+	padding: var(--padding-small) var(--padding-large);
+	margin-bottom: var(--padding-large);
+}
+.main .main-exhibition:hover {
+	background-color: var(--darkpeach-color);
+	cursor: pointer;
+}
+.main .main-exhibition .exhibition-desc {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: var(--padding-side);
+	font-family: "MapoFlowerIsland";
+	animation: fadein 1s;
+	-moz-animation: fadein 1s;
+	/* Firefox */
+	-webkit-animation: fadein 1s;
+	/* Safari and Chrome */
+	-o-animation: fadein 1s;
+	/* Opera */
+}
+.main .main-exhibition .exhibition-desc .exhibition-name {
+	font-size: var(--font-large);
+	font-weight: bold;
+	padding-bottom: var(--padding-medium);
+}
+.main .main-exhibition .exhibition-desc .exhibition-place,
+.main .main-exhibition .exhibition-desc .exhibition-date {
+	font-size: var(--font-medium);
+}
+.main .main-exhibition .exhibition-img {
+	margin-right: var(--padding-side);
+	animation: fadein 1s;
+	-moz-animation: fadein 1s;
+	/* Firefox */
+	-webkit-animation: fadein 1s;
+	/* Safari and Chrome */
+	-o-animation: fadein 1s;
+	/* Opera */
+}
