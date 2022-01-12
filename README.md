@@ -1,8 +1,14 @@
 # 당궁전: 당신이 궁금한 모든 전시회(Dang-Gung-Jeon)
 <br>
 
-## ✨배포 url✨: [당궁전](http://3.35.235.141)
+## 구현 영상✨
+> https://youtu.be/IuDZKzc7WN0
 
+## 노션 개인 개발일지✨
+> https://sulfuric-lunge-ed9.notion.site/15-577bc72da1dc40d7a690cfa19a57c17f
+
+
+<br>
 
 웹 사이트 제작 첫 팀프로젝트 결과물입니다. <br>
 15일 챌린지라 미흡하지만 Vanilla JavaScript 활용 능력을 기르는 데에 많은 도움이 되었습니다.
@@ -49,9 +55,4 @@
 5. 검색결과 페이지
 - 전시회 이름과 장소를 검색할 수 있습니다.<br>
 
-## 구현 영상✨
-> https://youtu.be/IuDZKzc7WN0
 
-## 노션 개인 개발일지✨
-> https://sulfuric-lunge-ed9.notion.site/15-577bc72da1dc40d7a690cfa19a57c17f
-<br>
